@@ -1,0 +1,25 @@
+window manager: i3
+backups: timeshift
+audio player: spotify
+video editing: shotcut
+image editing: pinta
+photo editing: Darktable
+gnome-screenshot for screenshots
+browser: firefox w/ tridactyl
+search engine: ecosia & duckduckgo
+video player: vlc
+stystem info: hardinfo
+media player key bindings: playerctl (https://github.com/acrisci/playerctl/releases)
+volume/brightnes key bindings: pactl (installed in ubuntu but configure sink!)
+setting a wallpaper in i3: feh (apt-get install feh) and configure it in i3 conf
+monitor arrangement: xrandr & arandr for gui
+i3blocks for i3status bar replacement
+cloud storage: megasync linux client
+shell: zsh with oh-my-zsh
+terminal: gnome terminal with tmux and tmuxinator
+development: docker-ce, docker-compose
+password and certificate / private key management: 1password for firefox and local client (https://support.1password.com/command-line-getting-started/)
+email: thunderbird
+messageing: signal/chatgrape
+HTTP client: Insomnia
+color picker: gpicka
