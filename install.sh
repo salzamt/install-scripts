@@ -28,13 +28,15 @@ wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-ke
 
 # installations
 apt update
-sudo apt install insomnia gpick curl signal-desktop ubuntu-make thunderbird i3 i3blocks openvpn  feh zsh tmux vim snapd timeshift shotcut pinta darktable gnome-screenshot 
+sudo apt install htop insomnia gpick curl signal-desktop ubuntu-make thunderbird i3 i3blocks openvpn  feh zsh tmux vim snapd timeshift shotcut pinta darktable gnome-screenshot 
 
 
 sudo snap install spotify vlc
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+exit()
 
 # playerctl
 cd ~/Downloads
