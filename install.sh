@@ -75,5 +75,5 @@ sudo apt-get update
 sudo apt-get install docker-ce
 
 # pycharm
-umake ide pycharm
+umake ide pycharm-professional
 
