@@ -217,6 +217,9 @@ bindsym shift+XF86AudioPrev exec playerctl --player=vlc previous
 # screenshot shortcut bind
 bindsym $mod+ctrl+s exec gnome-screenshot
 
+# gnome-control-center with proper XDG setting
+bindsym $mod+ctrl+p exec env XDG_CURRENT_DESKTOP=GNOME gnome-control-center
+
 # set wallpapers
 exec_always feh --bg-fill /home/riccardo/Pictures/wallpaper.jpg
 
