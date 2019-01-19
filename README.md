@@ -5,25 +5,25 @@ i3 with i3blocks
 ## backups 
 timeshift
 
-#@ audio player
+## audio player
 spotify
 
-#@ video editor
+## video editor
 shotcut
 
-#@ siple image editor 
+## siple image editor 
 pinta
 
-#@ photo editor
+## photo editor
 Darktable and Shotwell, gpicka for color picking
 
-#@ screenshot helper
+## screenshot helper
 gnome-screenshot
 
-#@ browser
+## browser
 firefox w/ tridactyl
 
-#@ search engine 
+## search engine 
 ecosia & duckduckgo
 
 ## media player 
