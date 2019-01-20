@@ -1,4 +1,7 @@
-apt-get update && apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade
+
+# graphics, wirelesse, bluetooth, etc....a little helper from ubuntu
+sudo ubuntu-drivers autoinstall
 
 # timeshift backup repo
 sudo apt-add-repository -y ppa:teejee2008/ppa
