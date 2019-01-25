@@ -8,6 +8,9 @@ timeshift
 ## audio player
 spotify
 
+## audio editor
+audacity
+
 ## video editor
 shotcut
 
