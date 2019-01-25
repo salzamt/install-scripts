@@ -60,7 +60,7 @@ pycharm-professional, vim, docker-ce, docker-compose
 thunderbird
 
 ## messaging
-Signal Native and Chatgrape
+Signal Native, Chatgrape, whatsapp (whatsdesk)
 
 ## HTTP Client
 Insomnia
