@@ -80,3 +80,5 @@ sudo apt-get install docker-ce
 # pycharm
 umake ide pycharm-professional
 
+# audacity
+sudo snap install audacity
