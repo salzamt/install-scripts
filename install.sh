@@ -29,21 +29,19 @@ echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" |  sudo tee -a /etc/apt
 wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-key add -
 
 
-# installations
-apt update
-sudo apt install thunderbird i3 i3blocks openvpn
-sudo apt install htop insomnia gpick curl 
-
-sudo apt install feh zsh tmux vim snapd
-sudo apt install timeshift shotcut pinta darktable gnome-screenshot ubuntu-make
+# installations of some fancy things.
+sudo apt update
+sudo apt install thunderbird i3 i3blocks openvpn htop insomnia gpick curl feh zsh tmux vim snapd timeshift shotcut pinta darktable gnome-screenshot ubuntu-make
+# special treat because of weird signing issues at the moment...
 sudo apt install signal-desktop 
 
-sudo snap install spotify vlc
+# whatsdesk=whatsapp linux client similar to signal client
+sudo snap install spotify vlc audacity whatsdesk
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# playerctl
+# playerctl for adding hotkeys and i3wm interaction of i3blocks with media players
 cd ~/Downloads
 wget https://github.com/acrisci/playerctl/releases/download/v2.0.1/playerctl-2.0.1_amd64.deb
 sudo dpkg -i playerctl-2.0.1_amd64.deb
@@ -51,34 +49,20 @@ sudo dpkg -i playerctl-2.0.1_amd64.deb
 # i3 configured wallpaper
 wget https://wallpapercave.com/wp/y3MGd53.jpg ~/Pictures/wallpaper.jpg
 
-# install megasync
+# install megasync CURRENTLY MANUALLY
 # https://mega.nz/sync
 
-# 1password
+# 1password CURRENTLY MANUALLY
 # https://support.1password.com/command-line-getting-started/
 
-# docker
-sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg2 \
-    software-properties-common
-
+# docker (c&p from docs...)
+sudo apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
 sudo apt-key fingerprint 0EBFCD88
 
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
-
-sudo apt-get update
-sudo apt-get install docker-ce
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt update
+sudo apt install docker-ce
 
 # pycharm
 umake ide pycharm-professional
-
-# audacity
-sudo snap install audacity
