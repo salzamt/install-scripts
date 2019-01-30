@@ -57,6 +57,13 @@ megasync
 ## shell
 zsh with oh-my-zsh
 
+## browser
+firefox
+### i3 settings
+`browser.fullscreen.autohide` -> `false` so that i3 fullscreen rules over ff fullscreen
+
+
+
 ## terminal
 gnome-terminal with tmux and tmuxinator
 
