@@ -7,6 +7,13 @@ timeshift
 
 ## VPN
 nordvpn with CyberSec and Killswitch
+getting started, login with
+`nordvpn settings`
+then set the comfy full protecthion like this
+`nordvpn set killswitch enabled`
+`nordvpn set cybersec enabled`
+`nordvpn set autoconnect enabled`
+`nordvpn connect`
 
 ## audio player
 spotify
