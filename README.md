@@ -74,6 +74,16 @@ glmark2
 ## games
 steam and 0AD (strategy game)
 
+## volume format support
+hfs, exfat
+
+### mounting hfs volumes
+`sudo mount -t hfsplus -o force,rw /dev/sdXY /media/mntpoint`
+or
+`sudo mount -t hfsplus -o remount,force,rw /mount/point`
+### repair corrupted hfs partitions
+`sudo fsck.hfsplus -f /dev/sdXY`
+
 
 # Config hints
 
