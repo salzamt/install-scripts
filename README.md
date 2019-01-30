@@ -3,8 +3,8 @@
 i3 with i3blocks
 
 ### setup i3exit (from this repo) for hotkey mod+ctrl+w
-sudo cp i3exit.sh /usr/local/sbin/i3exit
-sudo chmod +x  /usr/local/sbin/i3exit
+`sudo cp i3exit.sh /usr/local/sbin/i3exit`
+`sudo chmod +x  /usr/local/sbin/i3exit`
 
 
 ## backups 
