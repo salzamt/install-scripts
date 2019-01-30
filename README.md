@@ -38,6 +38,10 @@ gnome-screenshot
 ## browser
 firefox w/ tridactyl
 
+### more direct scrolling
+`abount:config`
+`general.smoothScroll` -> false
+
 ### high DPI screens
 `abount:config`
 `layout.css.devPixelsPerPx` -> 1.75 so the interface has a better size
