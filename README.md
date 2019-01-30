@@ -36,6 +36,10 @@ gnome-screenshot
 ## browser
 firefox w/ tridactyl
 
+### high DPI screens
+`abount:config`
+`layout.css.devPixelsPerPx` -> 1.75 so the interface has a better size
+
 ## search engine 
 ecosia & duckduckgo
 
@@ -56,13 +60,6 @@ megasync
 
 ## shell
 zsh with oh-my-zsh
-
-## browser
-firefox
-### i3 settings
-`browser.fullscreen.autohide` -> `false` so that i3 fullscreen rules over ff fullscreen
-
-
 
 ## terminal
 gnome-terminal with tmux and tmuxinator
@@ -113,3 +110,22 @@ playerctl (https://github.com/acrisci/playerctl/releases)
 ## volume/brightnes key bindings
 pactl (installed in ubuntu but configure sink!)
 
+## gdk and QT scaling for high DPI screens
+add to `~/.profile`
+```
+export GDK_SCALE=2
+export GDK_DPI_SCALE=0.5
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+```
+
+add to `~/.Xresources`
+```
+Xft.dpi: 192
+URxvt.font: xft:FiraMono-Regular:size=10
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+```
