@@ -96,6 +96,13 @@ hardinfo
 
 ## games
 steam and 0AD (strategy game)
+### 0ad config for high dpi screens
+orig values:
+https://trac.wildfiregames.com/browser/ps/trunk/binaries/data/config/default.cfg
+overwrite 
+`gui.scale = 2.0` in `~.config/0ad/config/user.cfg`
+
+
 
 ## volume format support
 hfs, exfat
