@@ -52,6 +52,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 cd ~/Downloads
 wget https://github.com/acrisci/playerctl/releases/download/v2.0.1/playerctl-2.0.1_amd64.deb
 sudo dpkg -i playerctl-2.0.1_amd64.deb
+# nordvpn
+wget https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
+sudo dpkg -i nordvpn-release_1.0.0_all.deb
 
 # i3 configured wallpaper
 wget https://wallpapercave.com/wp/y3MGd53.jpg ~/Pictures/wallpaper.jpg
@@ -69,7 +72,7 @@ sudo apt-key fingerprint 0EBFCD88
 
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt update
-sudo apt install docker-ce
+sudo apt install docker-ce nordvpn
 
 # pycharm
 umake ide pycharm-professional
