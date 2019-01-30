@@ -81,6 +81,9 @@ xrandr (cli) and arandr (gui)
 ## benchmark for finding a working nvidia driver...
 glmark2
 
+## hardware info summary
+hardinfo
+
 ## games
 steam and 0AD (strategy game)
 
