@@ -65,6 +65,12 @@ Signal Native, Chatgrape, whatsapp (whatsdesk)
 ## HTTP Client
 Insomnia
 
+## display ordering
+xrandr (cli) and arandr (gui)
+
+## benchmark for finding a working nvidia driver...
+glmark2
+
 
 
 # Config hints
