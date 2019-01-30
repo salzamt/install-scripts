@@ -1,4 +1,4 @@
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade && apt-get install curl
 
 # graphics, wirelesse, bluetooth, etc....a little helper from ubuntu
 sudo ubuntu-drivers autoinstall
