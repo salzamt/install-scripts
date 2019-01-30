@@ -5,6 +5,9 @@ i3 with i3blocks
 ## backups 
 timeshift
 
+## VPN
+nordvpn with CyberSec and Killswitch
+
 ## audio player
 spotify
 
