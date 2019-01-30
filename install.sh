@@ -31,7 +31,7 @@ wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-ke
 
 # installations of some fancy things.
 sudo apt update
-sudo apt install thunderbird i3 i3blocks openvpn htop insomnia gpick curl feh zsh tmux vim snapd timeshift shotcut pinta darktable gnome-screenshot ubuntu-make signal-desktop git arandr glmark2
+sudo apt install thunderbird i3 i3blocks openvpn htop insomnia gpick curl feh zsh tmux vim snapd timeshift shotcut pinta darktable gnome-screenshot ubuntu-make signal-desktop git arandr glmark2 steam
 
 # whatsdesk=whatsapp linux client similar to signal client
 sudo snap install spotify vlc audacity whatsdesk
