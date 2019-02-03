@@ -27,6 +27,13 @@ echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sud
 dpkg -i ./keyring.deb
 echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" >> /etc/apt/sources.list.d/sur5r-i3.list
 
+# bring back gnome handyness in i3 
+sudo apt install -y gnome-flashback gnome-tweak-tool
+cd ~/workspace
+git clone https://github.com/glsorre/i3-gnome
+cd i3-gnome
+sudo make install
+
 # insomnia
 echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" |  sudo tee -a /etc/apt/sources.list.d/insomnia.list
 wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-key add -
