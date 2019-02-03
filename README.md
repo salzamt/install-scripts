@@ -1,6 +1,6 @@
 # Tooling
 ## window manager
-i3 with i3blocks
+i3 with i3blocks and i3-flashback / i3-gnome
 
 ### setup i3exit (from this repo) for hotkey mod+ctrl+w
 `sudo cp i3exit.sh /usr/local/sbin/i3exit`
