@@ -7,7 +7,7 @@ i3 with i3blocks and i3-flashback / i3-gnome + gnome-tweak-tool for optimization
 `sudo chmod +x  /usr/local/sbin/i3exit`
 
 #### automatically moving windows to fixed workspaces
-use `xwininfo` to get the window class and assign in i3 config f.e. `assign [class="Signal"] $w9`
+use `xwininfo` to get the window class and assign in i3 config f.e. `assign [class="Signal"] $w9`. for spotify its a bit more complex as it does not set the window class properly. workaround: `for_window [class="Spotify"] move to workspace $w0`
 
 ## backups 
 timeshift
