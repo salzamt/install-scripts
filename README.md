@@ -9,6 +9,9 @@ i3 with i3blocks and i3-flashback / i3-gnome + gnome-tweak-tool for optimization
 #### automatically moving windows to fixed workspaces
 use `xwininfo` to get the window class and assign in i3 config f.e. `assign [class="Signal"] $w9`. for spotify its a bit more complex as it does not set the window class properly. workaround: `for_window [class="Spotify"] move to workspace $w0`
 
+## notifications
+if you are not happy with the gnome notification system (test if it works fine for you regarding font size and multi display with `notify-send --icon=gtk-info Test "This is a test"`, dunst (https://dunst-project.org/) is a great alternative. docs tbd
+
 ## backups 
 timeshift
 
