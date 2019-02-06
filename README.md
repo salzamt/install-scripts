@@ -6,6 +6,8 @@ i3 with i3blocks and i3-flashback / i3-gnome + gnome-tweak-tool for optimization
 `sudo cp i3exit.sh /usr/local/sbin/i3exit`
 `sudo chmod +x  /usr/local/sbin/i3exit`
 
+#### automatically moving windows to fixed workspaces
+use `xwininfo` to get the window class and assign in i3 config f.e. `assign [class="Signal"] $w9`
 
 ## backups 
 timeshift
