@@ -31,7 +31,8 @@ spotify
 use `spotify --force-device-scale-factor=1.5` - already configured in the spotify shortcut in i3
 
 ## audio editor
-audacity
+audacity for edigint
+pavucontrol mixing in/outputs and applications
 
 ## video editor
 shotcut
