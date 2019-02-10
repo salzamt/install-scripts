@@ -41,7 +41,7 @@ shotcut
 pinta
 
 ## photo editor
-Darktable and Shotwell, gpicka for color picking
+Darktable and Shotwell, gpicka for color picking, gthumb for organizing
 
 ## screenshot helper
 gnome-screenshot
