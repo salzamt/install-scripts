@@ -153,3 +153,17 @@ Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
 ```
+
+
+# Making things work with MacBook Pro 15 Retian 2012
+## broadcom wifi drivers
+tbd
+
+## braodcom sd card config
+we need to reduce the speed of the sd card so that it actually works. therefore:
+
+```
+sudo sh -c 'echo options sdhci debug_quirks=0x40 debug_quirks2=0x4 >> /etc/modprobe.d/sdhci-pci.conf' && sudo modprobe -r sdhci-pci sdhci && sudo modprobe sdhci-pci
+```
+
+The option 0x4 decreases speed from ultra high speed to high speed, but it is better that not operable card.
