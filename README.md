@@ -88,7 +88,7 @@ pycharm-professional, vim, docker-ce, docker-compose
 1Passowrd for Firefox and as native client (https://support.1password.com/command-line-getting-started/)
 
 ## email
-thunderbird
+mailbird
 
 ## messaging
 Signal Native, Chatgrape, whatsapp (whatsdesk)
