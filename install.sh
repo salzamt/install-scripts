@@ -40,7 +40,7 @@ wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-ke
 
 # installations of some fancy things.
 sudo apt update
-sudo apt install thunderbird i3 i3blocks gthumb openvpn htop insomnia pavucontrol gpick curl feh zsh tmux vim snapd timeshift shotcut pinta darktable gnome-screenshot ubuntu-make signal-desktop git arandr glmark2 hardinfo
+sudo apt install i3 i3blocks gthumb openvpn htop insomnia pavucontrol gpick curl feh zsh tmux vim snapd timeshift shotcut pinta darktable gnome-screenshot ubuntu-make signal-desktop git arandr glmark2 hardinfo
 
 # little more hd format utils for exfat and hfs+
 sudo apt-get install exfat-fuse exfat-utils hfsprogs
@@ -49,7 +49,7 @@ sudo apt-get install exfat-fuse exfat-utils hfsprogs
 sudo apt install steam 0ad 
 
 # whatsdesk=whatsapp linux client similar to signal client
-sudo snap install spotify vlc audacity whatsdesk
+sudo snap install spotify vlc audacity whatsdesk mailspring
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
