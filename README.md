@@ -176,3 +176,4 @@ MacBookPro10,1
 ```
 
 use blueman-applet (from package blueman) to do bluetooth stuff
+more under http://iafonov.github.io/blog/ubuntu-macbook-pro-2015-notes.html
