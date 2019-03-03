@@ -167,3 +167,12 @@ sudo sh -c 'echo options sdhci debug_quirks=0x40 debug_quirks2=0x4 >> /etc/modpr
 ```
 
 The option 0x4 decreases speed from ultra high speed to high speed, but it is better that not operable card.
+
+
+# specialties for macbook pro retina
+```
+sudo dmidecode -s system-product-name
+MacBookPro10,1
+```
+
+use blueman-applet (from package blueman) to do bluetooth stuff
