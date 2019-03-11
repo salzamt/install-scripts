@@ -27,7 +27,7 @@ sudo dpkg -i ./keyring.deb
 echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" >> /etc/apt/sources.list.d/sur5r-i3.list
 
 # bring back gnome handyness in i3 
-sudo apt install -y gnome-flashback gnome-tweak-tool
+sudo apt install -y gnome-flashback gnome-sushi gnome-tweak-tool
 cd ~/workspace
 git clone https://github.com/glsorre/i3-gnome
 cd i3-gnome
