@@ -45,6 +45,7 @@ Darktable and Shotwell, gpicka for color picking, gthumb for organizing
 
 ## screenshot helper
 gnome-screenshot
+gtk-recordmydesktop
 
 ## browser
 firefox w/ tridactyl
