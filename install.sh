@@ -22,10 +22,16 @@ sudo add-apt-repository ppa:wfg/0ad
 curl -s https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
 echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
 
-# i3 stuff ( next three lines, switch to root)
 /usr/lib/apt/apt-helper download-file http://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2018.01.30_all.deb keyring.deb SHA256:baa43dbbd7232ea2b5444cae238d53bebb9d34601cc000e82f11111b1889078a
-dpkg -i ./keyring.deb
+sudo dpkg -i ./keyring.deb
 echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" >> /etc/apt/sources.list.d/sur5r-i3.list
+
+# bring back gnome handyness in i3 
+sudo apt install -y gnome-flashback gnome-sushi gnome-tweak-tool
+cd ~/workspace
+git clone https://github.com/glsorre/i3-gnome
+cd i3-gnome
+sudo make install
 
 # insomnia
 echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" |  sudo tee -a /etc/apt/sources.list.d/insomnia.list
@@ -34,7 +40,7 @@ wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-ke
 
 # installations of some fancy things.
 sudo apt update
-sudo apt install thunderbird i3 i3blocks openvpn htop insomnia gpick curl feh zsh tmux vim snapd timeshift shotcut pinta darktable gnome-screenshot ubuntu-make signal-desktop git arandr glmark2 hardinfo
+sudo apt install i3 i3blocks gtk-recordmydesktop blueman gthumb openvpn htop insomnia pavucontrol gpick curl feh zsh tmux vim snapd timeshift shotcut pinta darktable gnome-screenshot ubuntu-make signal-desktop git arandr glmark2 hardinfo
 
 # little more hd format utils for exfat and hfs+
 sudo apt-get install exfat-fuse exfat-utils hfsprogs
@@ -43,7 +49,7 @@ sudo apt-get install exfat-fuse exfat-utils hfsprogs
 sudo apt install steam 0ad 
 
 # whatsdesk=whatsapp linux client similar to signal client
-sudo snap install spotify vlc audacity whatsdesk
+sudo snap install spotify vlc audacity whatsdesk mailspring
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

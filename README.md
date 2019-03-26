@@ -1,6 +1,16 @@
 # Tooling
 ## window manager
-i3 with i3blocks
+i3 with i3blocks and i3-flashback / i3-gnome + gnome-tweak-tool for optimizations on theme and 4k saling with subpixels
+
+### setup i3exit (from this repo) for hotkey mod+ctrl+w
+`sudo cp i3exit.sh /usr/local/sbin/i3exit`
+`sudo chmod +x  /usr/local/sbin/i3exit`
+
+#### automatically moving windows to fixed workspaces
+use `xwininfo` to get the window class and assign in i3 config f.e. `assign [class="Signal"] $w9`. for spotify its a bit more complex as it does not set the window class properly. workaround: `for_window [class="Spotify"] move to workspace $w0`
+
+## notifications
+if you are not happy with the gnome notification system (test if it works fine for you regarding font size and multi display with `notify-send --icon=gtk-info Test "This is a test"`, dunst (https://dunst-project.org/) is a great alternative. docs tbd
 
 ## backups 
 timeshift
@@ -21,7 +31,8 @@ spotify
 use `spotify --force-device-scale-factor=1.5` - already configured in the spotify shortcut in i3
 
 ## audio editor
-audacity
+audacity for edigint
+pavucontrol mixing in/outputs and applications
 
 ## video editor
 shotcut
@@ -30,10 +41,11 @@ shotcut
 pinta
 
 ## photo editor
-Darktable and Shotwell, gpicka for color picking
+Darktable and Shotwell, gpicka for color picking, gthumb for organizing
 
 ## screenshot helper
 gnome-screenshot
+gtk-recordmydesktop
 
 ## browser
 firefox w/ tridactyl
@@ -77,7 +89,7 @@ pycharm-professional, vim, docker-ce, docker-compose
 1Passowrd for Firefox and as native client (https://support.1password.com/command-line-getting-started/)
 
 ## email
-thunderbird
+mailspring
 
 ## messaging
 Signal Native, Chatgrape, whatsapp (whatsdesk)
@@ -142,3 +154,27 @@ Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
 ```
+
+
+# Making things work with MacBook Pro 15 Retian 2012
+## broadcom wifi drivers
+tbd
+
+## braodcom sd card config
+we need to reduce the speed of the sd card so that it actually works. therefore:
+
+```
+sudo sh -c 'echo options sdhci debug_quirks=0x40 debug_quirks2=0x4 >> /etc/modprobe.d/sdhci-pci.conf' && sudo modprobe -r sdhci-pci sdhci && sudo modprobe sdhci-pci
+```
+
+The option 0x4 decreases speed from ultra high speed to high speed, but it is better that not operable card.
+
+
+# specialties for macbook pro retina
+```
+sudo dmidecode -s system-product-name
+MacBookPro10,1
+```
+
+use blueman-applet (from package blueman) to do bluetooth stuff
+more under http://iafonov.github.io/blog/ubuntu-macbook-pro-2015-notes.html
