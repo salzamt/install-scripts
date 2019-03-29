@@ -43,6 +43,8 @@ pinta
 ## photo editor
 Darktable and Shotwell, gpicka for color picking, gthumb for organizing
 inkscape
+gimp
+kolourpaint
 
 ## screenshot helper
 deepin-screenshot
