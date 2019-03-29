@@ -42,9 +42,10 @@ pinta
 
 ## photo editor
 Darktable and Shotwell, gpicka for color picking, gthumb for organizing
+inkscape
 
 ## screenshot helper
-gnome-screenshot
+deepin-screenshot
 gtk-recordmydesktop
 
 ## browser
