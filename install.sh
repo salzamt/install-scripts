@@ -88,7 +88,7 @@ sudo apt install inkscape
 sudo apt install deepin-screenshot
 sudo apt install gimp
 sudo apt install kolourpaint
-
+sudo apt install texlive
 
 
 # install dunst
