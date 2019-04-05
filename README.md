@@ -158,6 +158,8 @@ Xft.antialias: 1
 Xft.rgba: rgb
 ```
 
+# file manager
+ranger-fm (vim based terminal driven file manager)
 
 # Making things work with MacBook Pro 15 Retian 2012
 ## broadcom wifi drivers
