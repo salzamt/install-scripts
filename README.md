@@ -184,5 +184,8 @@ MacBookPro10,1
 # text editing
 texlive
 
+# gps / routing
+viking
+Q landkarte GT 
 use blueman-applet (from package blueman) to do bluetooth stuff
 more under http://iafonov.github.io/blog/ubuntu-macbook-pro-2015-notes.html
