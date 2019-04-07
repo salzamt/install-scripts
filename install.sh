@@ -49,7 +49,7 @@ sudo apt-get install exfat-fuse exfat-utils hfsprogs
 sudo apt install steam 0ad 
 
 # whatsdesk=whatsapp linux client similar to signal client
-sudo snap install spotify vlc audacity whatsdesk mailspring
+sudo snap install spotify vlc audacity whatsdesk mailspring viking-gps
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -83,7 +83,7 @@ sudo apt install docker-ce nordvpn
 # pycharm
 umake ide pycharm-professional
 
-
+sudo apt-get install qlandkartegt 
 sudo apt install inkscape
 sudo apt install deepin-screenshot
 sudo apt install gimp
