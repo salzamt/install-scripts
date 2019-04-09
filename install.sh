@@ -98,3 +98,10 @@ sudo apt install libdbus-1-dev libx11-dev libxinerama-dev libxrandr-dev libxss-d
 cd workspace
 git clone https://github.com/dunst-project/dunst.git && cd dunst && nmake && nsudo make install
 
+# systemd for i3lock and nordvpn
+/etc/systemd/system/i3lock.service /etc/systemd/system/nordvpn_disc.service
+/etc/systemd/system/nordvpn_conn.service
+/etc/systemd/system/i3lock.service
+systemctl enable nordvpn_disc.service
+systemctl enable nordvpn_conn.service
+systemctl enable i3lock.service
