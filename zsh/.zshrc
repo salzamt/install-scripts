@@ -134,3 +134,6 @@ alias stress="ssh -p 17722 grape@stress.ubergrape.com"
 alias gr="cd ~/workspace/chatgrape && grapedev/enter-runtime.sh"
 alias calc="qalc"
 alias reswap="sudo swapoff -a && sudo swapon -a"
+
+# vim mode
+# bindkey -v
