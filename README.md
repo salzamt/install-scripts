@@ -87,6 +87,7 @@ gnome-terminal with tmux and tmuxinator
 
 ## Development
 pycharm-professional, vim, docker-ce, docker-compose
+VIM https://github.com/rapphil/vim-python-ide.git
 
 ## password, identities and certificate manager
 1Passowrd for Firefox and as native client (https://support.1password.com/command-line-getting-started/)
