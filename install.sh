@@ -12,6 +12,10 @@ sudo add-apt-repository ppa:haraldhv/shotcut
 # pinta image editing
 sudo add-apt-repository ppa:pinta-maintainers/pinta-stable
 
+# python terminal color module (used for i3blocks custom blocks)
+sudo pip install termcolor
+
+
 # ubuntu make
 sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
 
