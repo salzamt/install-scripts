@@ -114,3 +114,5 @@ systemctl enable i3lock.service
 sudo apt install libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev python3-dev git ctags vim-gtk
 git clone https://github.com/rapphil/vim-python-ide.git && cd vim-python-ide && ./install.sh
 
+# install sensors
+sudo apt install lm-sensors hddtemp && sudo sensors-detect && sensors
