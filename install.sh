@@ -116,3 +116,11 @@ git clone https://github.com/rapphil/vim-python-ide.git && cd vim-python-ide && 
 
 # install sensors (CLI: sensors, pensor for GUI)
 sudo apt install lm-sensors hddtemp psensor && sudo sensors-detect && sensors
+
+# python pip 2 a 3
+sudo apt install python-pip python3-dev libjpeg-dev gir1.2-gexiv2-0.10 jpeginfo python3-pip
+
+# image duplicate finder
+#https://github.com/jesjimher/imgdupes
+sudo pip3 install paramiko
+sudo pip3 install jpegdupes
