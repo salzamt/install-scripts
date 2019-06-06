@@ -188,6 +188,9 @@ MacBookPro10,1
 # text editing
 texlive
 
+# power management
+powertop
+
 # gps / routing
 viking
 Q landkarte GT 
