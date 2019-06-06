@@ -115,7 +115,7 @@ sudo apt install libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev liba
 git clone https://github.com/rapphil/vim-python-ide.git && cd vim-python-ide && ./install.sh
 
 # install sensors (CLI: sensors, pensor for GUI)
-sudo apt install lm-sensors hddtemp psensor && sudo sensors-detect && sensors
+sudo apt install lm-sensors hddtemp powertop psensor && sudo sensors-detect && sensors
 
 # python pip 2 a 3
 sudo apt install python-pip python3-dev libjpeg-dev gir1.2-gexiv2-0.10 jpeginfo python3-pip
