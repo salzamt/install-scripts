@@ -44,7 +44,7 @@ wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-ke
 
 # installations of some fancy things.
 sudo apt update
-sudo apt install i3 i3blocks gtk-recordmydesktop blueman gthumb openvpn htop insomnia pavucontrol gpick curl feh zsh tmux vim vifm snapd timeshift shotcut pinta darktable gnome-screenshot ubuntu-make signal-desktop git arandr glmark2 hardinfo
+sudo apt install i3 i3blocks redshift-gtk gtk-recordmydesktop blueman gthumb openvpn htop insomnia pavucontrol gpick curl feh zsh tmux vim vifm snapd timeshift shotcut pinta darktable gnome-screenshot ubuntu-make signal-desktop git arandr glmark2 hardinfo
 
 # little more hd format utils for exfat and hfs+
 sudo apt-get install exfat-fuse exfat-utils hfsprogs
