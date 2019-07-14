@@ -38,7 +38,8 @@ audacity for edigint
 pavucontrol mixing in/outputs and applications
 
 ## video editor
-shotcut
+shotcut and flowblade
+https://jliljebl.github.io/flowblade/download.html
 
 ## siple image editor 
 pinta
