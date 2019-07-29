@@ -124,3 +124,7 @@ sudo apt install python-pip python3-dev libjpeg-dev gir1.2-gexiv2-0.10 jpeginfo 
 #https://github.com/jesjimher/imgdupes
 sudo pip3 install paramiko
 sudo pip3 install jpegdupes
+
+
+#uncomplicated firewall
+ufw enable
