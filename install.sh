@@ -128,3 +128,4 @@ sudo pip3 install jpegdupes
 
 #uncomplicated firewall
 ufw enable
+uwf allow in ssh
