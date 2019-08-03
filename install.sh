@@ -125,6 +125,13 @@ sudo apt install python-pip python3-dev libjpeg-dev gir1.2-gexiv2-0.10 jpeginfo 
 sudo pip3 install paramiko
 sudo pip3 install jpegdupes
 
+# andbox for running android apps
+sudo snap install --devmode --beta anbox
+snap refresh anbox --edge --devmode
+sudo add-apt-repository ppa:morphis/anbox-support
+sudo apt install linux-headers-generic anbox-modules-dkms
+sudo modprobe ashmem_linux
+sudo modprobe binder_linux
 
 #uncomplicated firewall
 ufw enable
