@@ -102,6 +102,9 @@ sudo apt install libdbus-1-dev libx11-dev libxinerama-dev libxrandr-dev libxss-d
 cd workspace
 git clone https://github.com/dunst-project/dunst.git && cd dunst && nmake && nsudo make install
 
+#partition stuff
+sudo apt install gparted gpart
+
 # systemd for i3lock and nordvpn
 /etc/systemd/system/i3lock.service /etc/systemd/system/nordvpn_disc.service
 /etc/systemd/system/nordvpn_conn.service
