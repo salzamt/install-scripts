@@ -30,6 +30,9 @@ spotify
 ### high dpi scaling
 use `spotify --force-device-scale-factor=1.5` - already configured in the spotify shortcut in i3
 
+## partition stuff
+gparted gpart
+
 ## file manager
 vifm
 
