@@ -144,3 +144,6 @@ git clone --recursive https://github.com/jaagr/polybar
 cd polybar
 ./build.sh
 cp /usr/local/share/doc/polybar/config ~/.config/polybar; polybar -c ~/.config/polybar example
+
+# install multibootusb for live usb creation scripts
+http://multibootusb.org/page_download/
