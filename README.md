@@ -89,8 +89,8 @@ megasync
 ## shell
 zsh with oh-my-zsh
 
-## terminal
-gnome-terminal with tmux and tmuxinator
+# terminal
+alacritty (gpu accelerated) with tmux and tmuxinator
 
 ## Development
 pycharm-professional, vim, docker-ce, docker-compose
