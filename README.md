@@ -91,6 +91,7 @@ zsh with oh-my-zsh
 
 # terminal
 alacritty (gpu accelerated) with tmux and tmuxinator
+kitty (w/o tmux, gpu accel) with https://github.com/dexpota/kitty-themes
 
 ## Development
 pycharm-professional, vim, docker-ce, docker-compose
