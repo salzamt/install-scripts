@@ -154,3 +154,9 @@ cp /usr/local/share/doc/polybar/config ~/.config/polybar; polybar -c ~/.config/p
 
 # install multibootusb for live usb creation scripts
 http://multibootusb.org/page_download/
+
+#install kitty (terminal)
+git clone --depth 1 git@github.com:dexpota/kitty-themes.git ~/.config/kitty/kitty-themes
+cd ~/.config/kitty
+ln -s ./kitty-themes/themes/Earthsong.conf ~/.config/kitty/theme.conf
+# add this to kitty conf: include ./theme.conf
