@@ -140,6 +140,9 @@ sudo modprobe binder_linux
 ufw enable
 uwf allow in ssh
 
+# link tmux config
+ln -s ~/.config/tmux/.tmux.conf ~/.tmux.conf
+
 # install alacritty (gpu accelerated terminal)
 sudo add-apt-repository ppa:mmstick76/alacritty
 sudo apt install alacritty
