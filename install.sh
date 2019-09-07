@@ -167,3 +167,9 @@ git clone --depth 1 git@github.com:dexpota/kitty-themes.git ~/.config/kitty/kitt
 cd ~/.config/kitty
 ln -s ./kitty-themes/themes/Earthsong.conf ~/.config/kitty/theme.conf
 # add this to kitty conf: include ./theme.conf
+
+
+# nordlynx wireguard
+sudo add-apt-repository ppa:wireguard/wireguard
+sudo apt-get install wireguard
+nordvpn set technology nordlynx
