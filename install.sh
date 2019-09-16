@@ -173,3 +173,7 @@ ln -s ./kitty-themes/themes/Earthsong.conf ~/.config/kitty/theme.conf
 sudo add-apt-repository ppa:wireguard/wireguard
 sudo apt-get install wireguard
 nordvpn set technology nordlynx
+
+
+# equalizer
+sudo apt install pulseaudio-equalizer
