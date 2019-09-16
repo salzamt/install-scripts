@@ -269,3 +269,10 @@ mode "$mode_system" {
 bindsym $mod+ctrl+w mode "$mode_system"
 
 
+# text editor
+bindsym $mod+ctrl+t exec gnome-text-editor
+
+#calc
+bindsym $mod+ctrl+c exec gnome-calculator
+
+
