@@ -150,7 +150,7 @@
     # Otherwise the '#' and following  would be interpreted as a comment.
     background = "#222222"
     foreground = "#888888"
-    timeout = 10
+    timeout = 2
 
 [urgency_normal]
     background = "#285577"
@@ -181,9 +181,15 @@
 # NOTE: It might be helpful to run dunst -print in a terminal in order to find
 # fitting options for rules.
 
-#[espeak]
-#    summary = "*"
-#    script = dunst_espeak.sh
+[espeak-pm]
+    summary = "*@Riccardo*"
+    script = dunst_espeak.sh
+    urgency = critical
+
+[espeak-group]
+    summary = "*@group*"
+    script = dunst_espeak.sh
+    urgency = critical
 
 #[script-test]
 #    summary = "*script*"
@@ -194,26 +200,26 @@
 #    summary = "foobar"
 #    format = ""
 
-[signed_on]
-    appname = Pidgin
-    summary = "*signed on*"
-    urgency = low
+#[signed_on]
+#    appname = Pidgin
+#    summary = "*signed on*"
+#    urgency = low
 
-[signed_off]
-    appname = Pidgin
-    summary = *signed off*
-    urgency = low
+#[signed_off]
+#    appname = Pidgin
+#    summary = *signed off*
+#    urgency = low
 
-[says]
-    appname = Pidgin
-    summary = *says*
-    urgency = critical
-    format  = "%s "%b""
+#[says]
+#    appname = Pidgin
+#    summary = *says*
+#    urgency = critical
+#    format  = "%s "%b""
 
-[music]
-    appname = Amarok
-    summary = "Now playing"
-    urgency = low
+#[music]
+#    appname = Amarok
+#    summary = "Now playing"
+#    urgency = low
 
 #[twitter]
 #    appname = Pidgin
