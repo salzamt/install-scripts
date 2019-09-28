@@ -201,3 +201,10 @@ viking
 Q landkarte GT 
 use blueman-applet (from package blueman) to do bluetooth stuff
 more under http://iafonov.github.io/blog/ubuntu-macbook-pro-2015-notes.html
+
+
+
+
+# rest of the suite:
+nextcloud
+turtl notes app https://turtlapp.com/
