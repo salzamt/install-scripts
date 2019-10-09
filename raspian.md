@@ -5,6 +5,8 @@ switch to hdmi audio
 `amixer cset numid=3 2`
 
 install drm (netflix spotify)
+https://thepi.io/how-to-watch-netflix-on-the-raspberry-pi/
+
 ```
 sudo su
 cd /usr/lib/chromium-browser
