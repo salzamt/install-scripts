@@ -187,3 +187,6 @@ sudo apt install pulseaudio-equalizer
 
 # blender
 apt install blender
+
+# testdisk for photorec (deleted / lost file recovery)
+sudo apt-get install testdisk
