@@ -184,3 +184,6 @@ sudo apt install pulseaudio-equalizer
 # lbry.tv client
 # download and install client from https://beta.lbry.tv/
 
+
+# blender
+apt install blender
