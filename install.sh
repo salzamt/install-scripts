@@ -180,3 +180,7 @@ nordvpn set technology nordlynx
 
 # equalizer
 sudo apt install pulseaudio-equalizer
+
+# lbry.tv client
+# download and install client from https://beta.lbry.tv/
+
