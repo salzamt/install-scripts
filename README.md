@@ -44,6 +44,9 @@ pavucontrol mixing in/outputs and applications
 shotcut, openshot, blender and flowblade
 https://jliljebl.github.io/flowblade/download.html
 
+pitivi
+
+
 ## siple image editor 
 pinta
 
@@ -192,6 +195,7 @@ MacBookPro10,1
 
 # text editing
 texlive
+geany
 
 # power management
 powertop
