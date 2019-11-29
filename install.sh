@@ -1,3 +1,8 @@
+# change gtk theme to dark
+vim ~/.config/gtk-3.0/settings.ini
+# gtk-theme-name=Adwaita-dark
+
+
 sudo apt-get update && sudo apt-get upgrade && apt-get install curl
 
 # graphics, wirelesse, bluetooth, etc....a little helper from ubuntu
