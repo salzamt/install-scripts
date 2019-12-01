@@ -36,6 +36,7 @@ gparted gpart
 ## file manager
 vifm
 
+
 ## audio editor
 audacity for edigint
 pavucontrol mixing in/outputs and applications
@@ -192,6 +193,10 @@ The option 0x4 decreases speed from ultra high speed to high speed, but it is be
 sudo dmidecode -s system-product-name
 MacBookPro10,1
 ```
+in case the screen does not work or the right resolution is not detected in arandr, add the mode:
+`gtf 2880 1800 30`
+`xrandr --newmode "2880x1800_30.00"  210.05  2880 3048 3352 3824  1800 1801 1804 1831  -HSync +Vsync`
+`xrandr --addmode eDP-1 "2880x1800_30.00"`
 
 # text editing
 texlive
