@@ -161,8 +161,13 @@ uwf allow in ssh
 ln -s ~/.config/tmux/.tmux.conf ~/.tmux.conf
 
 # install alacritty (gpu accelerated terminal)
-sudo add-apt-repository ppa:mmstick76/alacritty
-sudo apt install alacritty
+sudo apt install cargo
+cargo install cargo-deb
+cargo deb --install -p alacritty
+
+
+# sudo add-apt-repository ppa:mmstick76/alacritty
+# sudo apt install alacritty
 
 # disable power button shutdown action - set to ignore.
 echo "HandlePowerKey=suspend" | sudo tee -a /etc/systemd/logind.conf
