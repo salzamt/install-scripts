@@ -22,6 +22,8 @@ sudo add-apt-repository ppa:pinta-maintainers/pinta-stable
 # python terminal color module (used for i3blocks custom blocks)
 sudo pip install termcolor
 
+#projectm-pulseaudio audio viualizer
+sudo apt install projectm-pulseaudio
 
 # ubuntu make
 sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
