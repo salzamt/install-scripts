@@ -23,7 +23,7 @@ sudo add-apt-repository ppa:pinta-maintainers/pinta-stable
 sudo pip install termcolor
 
 #projectm-pulseaudio audio viualizer
-sudo apt install projectm-pulseaudio
+sudo apt install projectm-pulseaudio ttf-dejavu
 
 # ubuntu make
 sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
