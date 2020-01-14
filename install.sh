@@ -7,6 +7,10 @@ vim ~/.config/gtk-3.0/settings.ini
 
 sudo apt-get update && sudo apt-get upgrade && apt-get install curl
 
+# install wireshark traffic analyzer
+sudo apt-get install wireshark
+
+
 # graphics, wirelesse, bluetooth, etc....a little helper from ubuntu
 sudo ubuntu-drivers autoinstall
 
