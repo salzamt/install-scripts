@@ -97,12 +97,26 @@ wget https://wallpapercave.com/wp/y3MGd53.jpg ~/Pictures/wallpaper.jpg
 
 # docker (c&p from docs...)
 sudo apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common
+
+
+# for ubnntu
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
-
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+# for debian
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/debian \
+   $(lsb_release -cs) \
+   stable"
+
+
+# then continue install docker
 sudo apt update
-sudo apt install docker-ce nordvpn
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+
 
 # pycharm
 umake ide pycharm-professional
@@ -113,6 +127,7 @@ sudo apt install deepin-screenshot
 sudo apt install gimp
 sudo apt install kolourpaint
 sudo apt install texlive
+sudo apt install nordvpn
 
 pip install ranger-fm
 
