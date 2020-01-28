@@ -10,6 +10,8 @@ sudo apt-get update && sudo apt-get upgrade && apt-get install curl
 # install wireshark traffic analyzer
 sudo apt-get install wireshark
 
+# android stuff
+sudo apt install android-tools-adb android-tools-fastboot
 
 # graphics, wirelesse, bluetooth, etc....a little helper from ubuntu
 sudo ubuntu-drivers autoinstall
