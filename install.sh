@@ -235,3 +235,31 @@ apt install blender
 
 # testdisk for photorec (deleted / lost file recovery)
 sudo apt-get install testdisk
+
+
+
+
+# if you have ever felt yourself having 4 different Fabric fabric fabric2 Fabric3 versions installed and everything is a mess like fabric itself, thats the chain of commands you need to run to unfuck it:
+sudo apt update
+sudo pip install --upgrade pip
+
+pip uninstall fabric
+# in case its still here (you might have installed it as sudo)
+sudo pip uninstall fabric
+
+pip uninstall Fabric
+# in case its still here (you might have installed it as sudo)
+sudo pip uninstall Fabric
+
+pip uninstall Fabric3
+# in case its still here (you might have installed it as sudo)
+sudo pip uninstall Fabric3
+
+sudo apt remove fabric
+sudo apt-get install python-pip
+sudo apt-get remove python3-pip; sudo apt-get install python3-pip
+pip3 install fabric
+# should be something legit 
+which fab
+
+
