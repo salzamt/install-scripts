@@ -45,6 +45,13 @@ sudo snap install alacritty --classic
 # graphics, wirelesse, bluetooth, etc....a little helper from ubuntu
 sudo ubuntu-drivers autoinstall
 ######################### only if debian  #####################################
+# install driver for broadcom wifi if you have a broadcom wifi card
+echo "deb http://deb.debian.org/debian buster-backports main contrib non-free" | sudo tee -a /etc/apt/sources.list
+sudo apt update
+sudo apt install linux-image-$(uname -r|sed 's,[^-]*-[^-]*-,,') linux-headers-$(uname -r|sed 's,[^-]*-[^-]*-,,') broadcom-sta-dkms
+modprobe -r b44 b43 b43legacy ssb brcmsmac bcma
+modprobe wl
+
 # to install ubuntu ppas if we need some
 sudo apt install build-essential devscripts
 
