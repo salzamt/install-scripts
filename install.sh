@@ -50,14 +50,23 @@ echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sud
 
 /usr/lib/apt/apt-helper download-file http://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2018.01.30_all.deb keyring.deb SHA256:baa43dbbd7232ea2b5444cae238d53bebb9d34601cc000e82f11111b1889078a
 sudo dpkg -i ./keyring.deb
-echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" >> /etc/apt/sources.list.d/sur5r-i3.list
-
-# bring back gnome handyness in i3 
 sudo apt install -y gnome-flashback gnome-sushi gnome-tweak-tool
 cd ~/workspace
 git clone https://github.com/glsorre/i3-gnome
 cd i3-gnome
 sudo make install
+
+# alternating layout for i3
+
+
+cd workspace
+sudo apt-get install x11-utils python-pip git
+git clone https://github.com/olemartinorg/i3-alternating-layout
+pip install i3-py
+# OR/AND (for Python 2.x)
+# pip2 install i3-py
+# in i3 conf: exec --no-startup-id python3 /path/to/alternating_layouts.py
+
 
 # insomnia
 echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" |  sudo tee -a /etc/apt/sources.list.d/insomnia.list
