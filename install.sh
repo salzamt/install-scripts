@@ -19,7 +19,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # testdisk: for photorec (deleted / lost file recovery)
 sudo apt get install \
   wireshark  \
-  android-tools-adb android-tools-fastboot glmark2  darktable \
+  glmark2  darktable \
   gnome-screenshot redshift-gtk gtk-recordmydesktop blueman gthumb openvpn  \
   gpick exfat-fuse exfat-utils hfsprogs steam thunderbird testdisk blender \
   pulseaudio-equalizer qlandkartegt inkscape  gimp \
@@ -185,9 +185,11 @@ sudo pip3 install paramiko
 sudo pip3 install jpegdupes
 
 ###############################################################################
-######################### android anbox #######################################
+######################### android #############################################
 ###############################################################################
-# andbox for running android apps
+# android basics
+android-tools-adb android-tools-fastboot
+# andbox for running android apps on linux
 sudo snap install --devmode --beta anbox
 sudo snap refresh anbox --edge --devmode
 sudo add-apt-repository ppa:morphis/anbox-support
@@ -204,7 +206,7 @@ uwf allow in ssh
 # link tmux config
 ln -s ~/.config/tmux/.tmux.conf ~/.tmux.conf
 
-# disable power button shutdown action - set to ignore maybe even.
+# disable power button shutdown action - set to ignore.
 echo "HandlePowerKey=suspend" | sudo tee -a /etc/systemd/logind.conf
 sudo service systemd-logind suspend
 
@@ -213,7 +215,6 @@ sudo service systemd-logind suspend
 
 # lbry.tv client ?
 # download and install client from https://beta.lbry.tv/
-
 
 ###############################################################################
 ######################### gnome / gtk stuff ###################################
@@ -242,7 +243,7 @@ sudo make install
 
 # i3 alternating spiral layout
 # alternating layout for i3
-cd workspace
+cd ~/workspace
 git clone https://github.com/olemartinorg/i3-alternating-layout
 pip install i3-py
 # OR/AND (for Python 2.x)
