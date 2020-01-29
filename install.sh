@@ -1,3 +1,223 @@
+# if we checkout some repos
+mkdir ~/workspace
+
+sudo apt get update
+# select fastest package mirror before we start installing all that stuff
+sudo apt install netselect-apt && sudo netselect-apt && sudo apt update
+sudo apt upgrade
+
+# basic tools
+sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
+  projectm-pulseaudio ttf-dejavu geany git x11-utils arandr feh zsh tmux vifm \
+  htop pavucontrol deepin-screenshot gparted gpart
+
+# oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# fancy tools
+# geany: text editor
+# testdisk: for photorec (deleted / lost file recovery)
+sudo apt get install \
+  wireshark  \
+  android-tools-adb android-tools-fastboot glmark2  darktable \
+  gnome-screenshot redshift-gtk gtk-recordmydesktop blueman gthumb openvpn  \
+  gpick exfat-fuse exfat-utils hfsprogs steam thunderbird testdisk blender \
+  pulseaudio-equalizer qlandkartegt inkscape  gimp \
+  kolourpaint texlive ranger-fm
+
+sudo snap install spotify vlc audacity whatsdesk viking-gps
+
+pip3 install fabric
+
+# python terminal color module (used for i3blocks custom blocks)
+pip install termcolor
+
+###############################################################################
+######################### alacritty GPU terminal ##############################
+###############################################################################
+sudo snap install alacritty --classic
+
+###############################################################################
+######################### distro specifics ####################################
+###############################################################################
+
+######################### # only if ubuntu ####################################
+# graphics, wirelesse, bluetooth, etc....a little helper from ubuntu
+sudo ubuntu-drivers autoinstall
+######################### only if debian  #####################################
+# to install ubuntu ppas if we need some
+sudo apt install build-essential devscripts
+
+# if firefox is not installed or instead of ESR you want a newer one
+snap install firefox
+
+###############################################################################
+######################### ppas for fancy apps #################################
+###############################################################################
+
+# timeshift backup repo
+sudo apt-add-repository -y ppa:teejee2008/ppa && sudo apt install timeshift
+
+# shotcut video editor
+sudo add-apt-repository ppa:haraldhv/shotcut && sudo apt install shotcut
+
+# pinta image editing
+sudo add-apt-repository ppa:pinta-maintainers/pinta-stable && sudo apt install pinta
+
+# ubuntu make
+sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make && sudo apt install ubuntu-make
+
+# 0ad (game)
+sudo add-apt-repository ppa:wfg/0ad && apt install 0ad
+
+###############################################################################
+######################### video editing #######################################
+###############################################################################
+
+# install pitivi video editor
+sudo apt-get install pitivi
+
+###############################################################################
+######################### signal messenger ####################################
+###############################################################################
+
+# signal
+curl -s https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
+echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
+sudo apt update && sudo apt install signal-desktop
+
+###############################################################################
+######################### insomnia rest client ################################
+###############################################################################
+# insomnia REST client
+echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" |  sudo tee -a /etc/apt/sources.list.d/insomnia.list
+wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-key add -
+sudo apt update && sudo apt install insomnia
+
+
+###############################################################################
+######################### nordvpn #####@#######################################
+###############################################################################
+# nordvpn if you have an account
+cd ~/Downloads
+wget https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
+sudo dpkg -i nordvpn-release_1.0.0_all.deb
+sudo apt update
+sudo apt install nordvpn
+
+# nordlynx wireguard
+sudo add-apt-repository ppa:wireguard/wireguard
+sudo apt-get install wireguard
+nordvpn set technology nordlynx
+
+# systemd for nordvpn todo
+/etc/systemd/system/i3lock.service /etc/systemd/system/nordvpn_disc.service
+/etc/systemd/system/nordvpn_conn.service
+systemctl enable nordvpn_disc.service
+systemctl enable nordvpn_conn.service
+
+
+
+###############################################################################
+######################### megasync ############################################
+###############################################################################
+#  megasync CURRENTLY MANUALLY
+# https://mega.nz/sync
+
+###############################################################################
+######################### 1 password ## #######################################
+###############################################################################
+# 1password CURRENTLY MANUALLY
+# https://support.1password.com/command-line-getting-started/
+
+###############################################################################
+######################### docker ######@#######################################
+###############################################################################
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg2 \
+    software-properties-common
+
+$ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
+
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io
+
+# isntall docker compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
+###############################################################################
+######################### pycharm #####@#######################################
+###############################################################################
+umake ide pycharm-professional
+
+
+###############################################################################
+######################### python-vim ide ######################################
+###############################################################################
+sudo apt install libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev \
+  libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev \
+  python-dev python3-dev git ctags vim-gtk
+cd ~/workspace
+git clone https://github.com/rapphil/vim-python-ide.git && cd vim-python-ide && ./install.sh
+
+###############################################################################
+################# sensors (CLI: sensors, pensor for GUI) ######################
+###############################################################################
+sudo apt install lm-sensors hddtemp powertop psensor && sudo sensors-detect && sensors
+
+
+###############################################################################
+####################### Image Manipulation ####################################
+###############################################################################
+# python pip 2 a 3
+sudo apt install python-pip python3-dev libjpeg-dev gir1.2-gexiv2-0.10 \
+  jpeginfo python3-pip
+
+# image duplicate finder
+#https://github.com/jesjimher/imgdupes
+sudo pip3 install paramiko
+sudo pip3 install jpegdupes
+
+###############################################################################
+######################### android anbox #######################################
+###############################################################################
+# andbox for running android apps
+sudo snap install --devmode --beta anbox
+sudo snap refresh anbox --edge --devmode
+sudo add-apt-repository ppa:morphis/anbox-support
+sudo apt install linux-headers-generic anbox-modules-dkms
+sudo modprobe ashmem_linux
+sudo modprobe binder_linux
+
+###############################################################################
+######################### uncomplicated firewall ##############################
+###############################################################################
+ufw enable
+uwf allow in ssh
+
+# link tmux config
+ln -s ~/.config/tmux/.tmux.conf ~/.tmux.conf
+
+# disable power button shutdown action - set to ignore maybe even.
+echo "HandlePowerKey=suspend" | sudo tee -a /etc/systemd/logind.conf
+sudo service systemd-logind suspend
+
+# install multibootusb for live usb creation scripts ?
+# http://multibootusb.org/page_download/
+
+# lbry.tv client ?
+# download and install client from https://beta.lbry.tv/
+
+
+###############################################################################
+######################### gnome / gtk stuff ###################################
+###############################################################################
 # change gtk theme to dark
 vim ~/.config/gtk-3.0/settings.ini
 # [Settings]
@@ -5,49 +225,13 @@ vim ~/.config/gtk-3.0/settings.ini
 # gtk-theme-name=Adwaita-dark
 # gtk-icon-theme-name=Adwaita
 
-sudo apt-get update && sudo apt-get upgrade && apt-get install curl
 
-# install wireshark traffic analyzer
-sudo apt-get install wireshark
-
-# android stuff
-sudo apt install android-tools-adb android-tools-fastboot
-
-# graphics, wirelesse, bluetooth, etc....a little helper from ubuntu
-sudo ubuntu-drivers autoinstall
-
-# timeshift backup repo
-sudo apt-add-repository -y ppa:teejee2008/ppa
-
-# shotcut video editor
-sudo add-apt-repository ppa:haraldhv/shotcut
-
-# pinta image editing
-sudo add-apt-repository ppa:pinta-maintainers/pinta-stable
-
-# python terminal color module (used for i3blocks custom blocks)
-sudo pip install termcolor
-
-#projectm-pulseaudio audio viualizer
-sudo apt install projectm-pulseaudio ttf-dejavu
-
-# ubuntu make
-sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
-
-# 0ad (game)
-sudo add-apt-repository ppa:wfg/0ad
-
-
-# install geany text editor
-sudo apt-get install geany
-
-# install pitivi video editor
-sudo apt-get install pitivi
-
-# signal
-curl -s https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
-echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
-
+###############################################################################
+############################## i3wm ###########################################
+###############################################################################
+sudo apt install i3 i3blocks
+# ONLY for i3wm beginners who want gnome helpers inside of i3wm.
+# dont do it if you want to get the plain i3wm experience!!
 /usr/lib/apt/apt-helper download-file http://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2018.01.30_all.deb keyring.deb SHA256:baa43dbbd7232ea2b5444cae238d53bebb9d34601cc000e82f11111b1889078a
 sudo dpkg -i ./keyring.deb
 sudo apt install -y gnome-flashback gnome-sushi gnome-tweak-tool
@@ -56,157 +240,33 @@ git clone https://github.com/glsorre/i3-gnome
 cd i3-gnome
 sudo make install
 
+# i3 alternating spiral layout
 # alternating layout for i3
-
-
 cd workspace
-sudo apt-get install x11-utils python-pip git
 git clone https://github.com/olemartinorg/i3-alternating-layout
 pip install i3-py
 # OR/AND (for Python 2.x)
 # pip2 install i3-py
 # in i3 conf: exec --no-startup-id python3 /path/to/alternating_layouts.py
 
-
-# insomnia
-echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" |  sudo tee -a /etc/apt/sources.list.d/insomnia.list
-wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-key add -
-
-
-# installations of some fancy things.
-sudo apt update
-sudo apt install i3 i3blocks redshift-gtk gtk-recordmydesktop blueman gthumb openvpn htop insomnia pavucontrol gpick curl feh zsh tmux vim vifm snapd timeshift shotcut pinta darktable gnome-screenshot ubuntu-make signal-desktop git arandr glmark2 hardinfo
-
-# little more hd format utils for exfat and hfs+
-sudo apt-get install exfat-fuse exfat-utils hfsprogs
-
-# optional games
-sudo apt install steam 0ad 
-
-# whatsdesk=whatsapp linux client similar to signal client
-sudo snap install spotify vlc audacity whatsdesk mailspring viking-gps
-
-# oh my zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 # playerctl for adding hotkeys and i3wm interaction of i3blocks with media players
 cd ~/Downloads
 wget https://github.com/acrisci/playerctl/releases/download/v2.0.1/playerctl-2.0.1_amd64.deb
 sudo dpkg -i playerctl-2.0.1_amd64.deb
-# nordvpn
-wget https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
-sudo dpkg -i nordvpn-release_1.0.0_all.deb
 
 # i3 configured wallpaper
 wget https://wallpapercave.com/wp/y3MGd53.jpg ~/Pictures/wallpaper.jpg
 
-# install megasync CURRENTLY MANUALLY
-# https://mega.nz/sync
-
-# 1password CURRENTLY MANUALLY
-# https://support.1password.com/command-line-getting-started/
-
-# docker (c&p from docs...)
-sudo apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common
-
-
-# for ubnntu
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo apt-key fingerprint 0EBFCD88
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-
-# for debian
-curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-sudo apt-key fingerprint 0EBFCD88
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/debian \
-   $(lsb_release -cs) \
-   stable"
-
-
-# then continue install docker
-sudo apt update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
-
-# isntall docker compose
-sudo curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
-
-# pycharm
-umake ide pycharm-professional
-
-sudo apt-get install qlandkartegt 
-sudo apt install inkscape
-sudo apt install deepin-screenshot
-sudo apt install gimp
-sudo apt install kolourpaint
-sudo apt install texlive
-sudo apt install nordvpn
-
-pip install ranger-fm
-
-# install dunst
-apt install libdbus-1-dev libx11-dev libxinerama-dev libxrandr-dev libxss-dev libglib2.0-dev libpango1.0-dev libgtk-3-dev libxdg-basedir-dev
+# install dunst notifications
 sudo apt install libdbus-1-dev libx11-dev libxinerama-dev libxrandr-dev libxss-dev libglib2.0-dev libpango1.0-dev libgtk-3-dev libxdg-basedir-dev libnotify-dev
 cd workspace
 git clone https://github.com/dunst-project/dunst.git && cd dunst && nmake && nsudo make install
 #check out dunst espeak to have your notifications read out
 sudo apt-get install espeak
 
-
-#partition stuff
-sudo apt install gparted gpart
-
-# systemd for i3lock and nordvpn
-/etc/systemd/system/i3lock.service /etc/systemd/system/nordvpn_disc.service
-/etc/systemd/system/nordvpn_conn.service
+# i3blocks systemd todo
 /etc/systemd/system/i3lock.service
-systemctl enable nordvpn_disc.service
-systemctl enable nordvpn_conn.service
 systemctl enable i3lock.service
-
-# python-vim ide
-sudo apt install libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev python3-dev git ctags vim-gtk
-git clone https://github.com/rapphil/vim-python-ide.git && cd vim-python-ide && ./install.sh
-
-# install sensors (CLI: sensors, pensor for GUI)
-sudo apt install lm-sensors hddtemp powertop psensor && sudo sensors-detect && sensors
-
-# python pip 2 a 3
-sudo apt install python-pip python3-dev libjpeg-dev gir1.2-gexiv2-0.10 jpeginfo python3-pip
-
-# image duplicate finder
-#https://github.com/jesjimher/imgdupes
-sudo pip3 install paramiko
-sudo pip3 install jpegdupes
-
-# andbox for running android apps
-sudo snap install --devmode --beta anbox
-snap refresh anbox --edge --devmode
-sudo add-apt-repository ppa:morphis/anbox-support
-sudo apt install linux-headers-generic anbox-modules-dkms
-sudo modprobe ashmem_linux
-sudo modprobe binder_linux
-
-#uncomplicated firewall
-ufw enable
-uwf allow in ssh
-
-# link tmux config
-ln -s ~/.config/tmux/.tmux.conf ~/.tmux.conf
-
-# install alacritty (gpu accelerated terminal)
-sudo apt install cargo
-cargo install cargo-deb
-cargo deb --install -p alacritty
-
-
-# sudo add-apt-repository ppa:mmstick76/alacritty
-# sudo apt install alacritty
-
-# disable power button shutdown action - set to ignore.
-echo "HandlePowerKey=suspend" | sudo tee -a /etc/systemd/logind.conf
-sudo service systemd-logind suspend
 
 # polybar
 sudo apt install build-essential git cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev i3-wm libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev
@@ -215,60 +275,3 @@ git clone --recursive https://github.com/jaagr/polybar
 cd polybar
 ./build.sh
 cp /usr/local/share/doc/polybar/config ~/.config/polybar; polybar -c ~/.config/polybar example
-
-# install multibootusb for live usb creation scripts
-http://multibootusb.org/page_download/
-
-#install kitty (terminal)
-git clone --depth 1 git@github.com:dexpota/kitty-themes.git ~/.config/kitty/kitty-themes
-cd ~/.config/kitty
-ln -s ./kitty-themes/themes/Earthsong.conf ~/.config/kitty/theme.conf
-# add this to kitty conf: include ./theme.conf
-
-
-# nordlynx wireguard
-sudo add-apt-repository ppa:wireguard/wireguard
-sudo apt-get install wireguard
-nordvpn set technology nordlynx
-
-
-# equalizer
-sudo apt install pulseaudio-equalizer
-
-# lbry.tv client
-# download and install client from https://beta.lbry.tv/
-
-
-# blender
-apt install blender
-
-# testdisk for photorec (deleted / lost file recovery)
-sudo apt-get install testdisk
-
-
-
-
-# if you have ever felt yourself having 4 different Fabric fabric fabric2 Fabric3 versions installed and everything is a mess like fabric itself, thats the chain of commands you need to run to unfuck it:
-sudo apt update
-sudo pip install --upgrade pip
-
-pip uninstall fabric
-# in case its still here (you might have installed it as sudo)
-sudo pip uninstall fabric
-
-pip uninstall Fabric
-# in case its still here (you might have installed it as sudo)
-sudo pip uninstall Fabric
-
-pip uninstall Fabric3
-# in case its still here (you might have installed it as sudo)
-sudo pip uninstall Fabric3
-
-sudo apt remove fabric
-sudo apt-get install python-pip
-sudo apt-get remove python3-pip; sudo apt-get install python3-pip
-pip3 install fabric
-# should be something legit 
-which fab
-
-
