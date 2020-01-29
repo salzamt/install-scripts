@@ -42,6 +42,9 @@ bindsym $mod+d exec dmenu_run
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+# alternating layoyt
+exec --no-startup-id python3 /home/riccardo/workspace/i3-alternating-layout/alternating_layouts.py
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
