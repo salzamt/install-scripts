@@ -8,8 +8,8 @@ sudo apt upgrade
 
 # basic tools
 sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
-  projectm-pulseaudio ttf-dejavu geany git x11-utils arandr feh zsh tmux vifm \
-  htop pavucontrol deepin-screenshot gparted gpart
+  ttf-dejavu git x11-utils arandr feh zsh tmux vifm \
+  htop pavucontrol gparted gpart
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -18,11 +18,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # geany: text editor
 # testdisk: for photorec (deleted / lost file recovery)
 sudo apt get install \
-  wireshark  \
-  glmark2  darktable \
-  gnome-screenshot redshift-gtk gtk-recordmydesktop blueman gthumb openvpn  \
+  wireshark deepin-screenshot  geany gnome-screenshot redshift-gtk \
+  gtk-recordmydesktop blueman gthumb openvpn  \
   gpick exfat-fuse exfat-utils hfsprogs steam thunderbird testdisk blender \
-  pulseaudio-equalizer qlandkartegt texlive ranger-fm
+  pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio  
 
 sudo snap install spotify vlc audacity whatsdesk viking-gps
 
@@ -93,7 +92,7 @@ sudo add-apt-repository ppa:wfg/0ad && apt install 0ad
 ###############################################################################
 ######################### media manipulation ##################################
 ###############################################################################
-sudo apt install pitivi inkscape gimp
+sudo apt install pitivi inkscape gimp darktable
 
 ###############################################################################
 ######################### signal messenger ####################################
