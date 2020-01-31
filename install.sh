@@ -90,9 +90,9 @@ sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make && sudo apt install ubunt
 sudo add-apt-repository ppa:wfg/0ad && apt install 0ad
 
 ###############################################################################
-######################### media manipulation ##################################
+######################### media apps ##########################################
 ###############################################################################
-sudo apt install pitivi inkscape gimp darktable
+sudo apt install pitivi inkscape gimp darktable gnome-sushi
 
 ###############################################################################
 ######################### signal messenger ####################################
@@ -252,7 +252,7 @@ sudo apt install i3 i3blocks
 # dont do it if you want to get the plain i3wm experience!!
 /usr/lib/apt/apt-helper download-file http://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2018.01.30_all.deb keyring.deb SHA256:baa43dbbd7232ea2b5444cae238d53bebb9d34601cc000e82f11111b1889078a
 sudo dpkg -i ./keyring.deb
-sudo apt install -y gnome-flashback gnome-sushi gnome-tweak-tool
+sudo apt install -y gnome-flashback gnome-tweak-tool
 cd ~/workspace
 git clone https://github.com/glsorre/i3-gnome
 cd i3-gnome
