@@ -55,8 +55,22 @@ modprobe wl
 # to install ubuntu ppas if we need some
 sudo apt install build-essential devscripts
 
-# if firefox is not installed or instead of ESR you want a newer one
-snap install firefox
+# if newest firefox is not installed or instead of ESR you want a newer one
+
+# add unstable/testing repo
+echo "deb http://deb.debian.org/debian/ unstable main contrib non-free" | sudo tee -a /etc/apt/sources.list
+# pin / lower priority for those unstable packages to stable so its the default
+# choice for everything not installed explicitly as "testing"
+echo "Package: *
+Pin: release a=stable
+Pin-Priority: 900
+
+Package: *
+Pin release a=unstable
+Pin-Priority: 10" | sudo tee -a /etc/apt/preferences.d/99pin-unstable
+
+sudo apt update
+sudo apt install -t unstable firefox
 
 ###############################################################################
 ######################### ppas for fancy apps #################################
