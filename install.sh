@@ -22,8 +22,7 @@ sudo apt get install \
   glmark2  darktable \
   gnome-screenshot redshift-gtk gtk-recordmydesktop blueman gthumb openvpn  \
   gpick exfat-fuse exfat-utils hfsprogs steam thunderbird testdisk blender \
-  pulseaudio-equalizer qlandkartegt inkscape  gimp \
-  kolourpaint texlive ranger-fm
+  pulseaudio-equalizer qlandkartegt texlive ranger-fm
 
 sudo snap install spotify vlc audacity whatsdesk viking-gps
 
@@ -82,8 +81,8 @@ sudo apt-add-repository -y ppa:teejee2008/ppa && sudo apt install timeshift
 # shotcut video editor
 sudo add-apt-repository ppa:haraldhv/shotcut && sudo apt install shotcut
 
-# pinta image editing
-sudo add-apt-repository ppa:pinta-maintainers/pinta-stable && sudo apt install pinta
+# pinta image editing (super laggy, replaced with gimp...)
+# sudo add-apt-repository ppa:pinta-maintainers/pinta-stable && sudo apt install pinta
 
 # ubuntu make
 sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make && sudo apt install ubuntu-make
@@ -92,11 +91,9 @@ sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make && sudo apt install ubunt
 sudo add-apt-repository ppa:wfg/0ad && apt install 0ad
 
 ###############################################################################
-######################### video editing #######################################
+######################### media manipulation ##################################
 ###############################################################################
-
-# install pitivi video editor
-sudo apt-get install pitivi
+sudo apt install pitivi inkscape gimp
 
 ###############################################################################
 ######################### signal messenger ####################################
