@@ -232,17 +232,15 @@ sudo service systemd-logind suspend
 
 # lbry.tv client ?
 # download and install client from https://beta.lbry.tv/
-
+tee -a /etc/apt/sources.list
 ###############################################################################
 ######################### gnome / gtk stuff ###################################
 ###############################################################################
 # change gtk theme to dark
-vim ~/.config/gtk-3.0/settings.ini
-# [Settings]
-# gtk-application-prefer-dark-theme=0
-# gtk-theme-name=Adwaita-dark
-# gtk-icon-theme-name=Adwaita
-
+echo "[Settings]
+gtk-application-prefer-dark-theme=0
+gtk-theme-name=Adwaita-dark
+gtk-icon-theme-name=Adwaita"| tee -a ~/.config/gtk-3.0/settings.ini
 
 ###############################################################################
 ############################## i3wm ###########################################
