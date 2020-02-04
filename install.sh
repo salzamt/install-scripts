@@ -238,7 +238,7 @@ tee -a /etc/apt/sources.list
 ###############################################################################
 # change gtk theme to dark
 echo "[Settings]
-gtk-application-prefer-dark-theme=0
+gtk-application-prefer-dark-theme=1
 gtk-theme-name=Adwaita-dark
 gtk-icon-theme-name=Adwaita"| tee -a ~/.config/gtk-3.0/settings.ini
 
