@@ -1,3 +1,7 @@
+# only debian:
+# add 32 bit support, for some packages
+sudo dpkg --add-architecture i386
+
 # if we checkout some repos
 mkdir ~/workspace
 
