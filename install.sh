@@ -1,7 +1,7 @@
 # if we checkout some repos
 mkdir ~/workspace
 
-sudo apt get update
+sudo apt update
 # select fastest package mirror before we start installing all that stuff
 sudo apt install netselect-apt && sudo netselect-apt && sudo apt update
 sudo apt upgrade
@@ -17,7 +17,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # fancy tools
 # geany: text editor
 # testdisk: for photorec (deleted / lost file recovery)
-sudo apt get install \
+sudo apt install \
   wireshark deepin-screenshot  geany gnome-screenshot redshift-gtk \
   gtk-recordmydesktop blueman gthumb openvpn  \
   gpick exfat-fuse exfat-utils hfsprogs steam thunderbird testdisk blender \
