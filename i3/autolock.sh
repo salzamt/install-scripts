@@ -1,5 +1,6 @@
 #!/bin/sh -e
-#.local/bin/autolock.sh
+# to .local/bin/autolock.sh
+# exec perm chmod +x ~/.local/bin/autolock.sh
 # Take a screenshot
 scrot /tmp/screen_locked.png
 
