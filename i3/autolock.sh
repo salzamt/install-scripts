@@ -1,5 +1,5 @@
 #!/bin/sh -e
-
+#.local/bin/autolock.sh
 # Take a screenshot
 scrot /tmp/screen_locked.png
 
