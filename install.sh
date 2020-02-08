@@ -22,8 +22,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # geany: text editor
 # testdisk: for photorec (deleted / lost file recovery)
 sudo apt install \
-  wireshark deepin-screenshot  geany gnome-screenshot redshift-gtk \
-  gtk-recordmydesktop blueman gthumb openvpn  \
+  wireshark deepin-screenshot  geany gnome-screenshot scrot redshift-gtk \
+  gtk-recordmydesktop blueman gthumb openvpn xautolock \
   gpick exfat-fuse exfat-utils hfsprogs steam thunderbird testdisk blender \
   pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio  
 
