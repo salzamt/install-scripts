@@ -25,9 +25,13 @@ sudo apt install \
   wireshark deepin-screenshot  geany gnome-screenshot scrot redshift-gtk \
   gtk-recordmydesktop blueman gthumb openvpn xautolock \
   gpick exfat-fuse exfat-utils hfsprogs steam thunderbird testdisk blender \
-  pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio  
+  pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio earlyoom 
 
 sudo snap install spotify vlc audacity whatsdesk viking-gps
+
+# enable earlyOOM killer (https://github.com/rfjakob/earlyoom)
+sudo systemctl enable earlyoom
+sudo systemctl start earlyoom
 
 pip3 install fabric
 
