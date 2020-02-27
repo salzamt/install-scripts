@@ -13,7 +13,7 @@ sudo apt upgrade
 # basic tools
 sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   ttf-dejavu git x11-utils arandr feh zsh tmux vifm \
-  htop pavucontrol gparted gpart
+  htop pavucontrol gparted gpart stress
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
