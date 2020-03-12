@@ -35,6 +35,10 @@ sudo systemctl start earlyoom
 
 pip3 install fabric
 
+
+
+
+
 # python terminal color module (used for i3blocks custom blocks)
 pip install termcolor
 
@@ -317,3 +321,10 @@ git clone --recursive https://github.com/jaagr/polybar
 cd polybar
 ./build.sh
 cp /usr/local/share/doc/polybar/config ~/.config/polybar; polybar -c ~/.config/polybar example
+
+
+
+# rename network interface if name is too long
+In /etc/udev/rules.d/70-persistent-net.rules
+add:
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTRS{product}=="802.11 n WLAN", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="wlan*", NAME="wlan1"
