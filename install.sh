@@ -15,6 +15,9 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   ttf-dejavu git x11-utils arandr feh zsh tmux vifm \
   htop pavucontrol gparted gpart stress
 
+pip install --upgrade setuptools
+pip3 install --upgrade setuptools
+
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -34,10 +37,6 @@ sudo systemctl enable earlyoom
 sudo systemctl start earlyoom
 
 pip3 install fabric
-
-
-
-
 
 # python terminal color module (used for i3blocks custom blocks)
 pip install termcolor
@@ -221,7 +220,7 @@ sudo apt install python-pip python3-dev libjpeg-dev gir1.2-gexiv2-0.10 \
 # image duplicate finder
 #https://github.com/jesjimher/imgdupes
 sudo pip3 install paramiko
-sudo pip3 install jpegdupes
+sudo apt install  libturbojpeg0-dev; sudo pip3 install jpegdupes
 
 ###############################################################################
 ######################### android #############################################
