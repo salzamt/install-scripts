@@ -269,7 +269,7 @@ gtk-icon-theme-name=Adwaita"| tee -a ~/.config/gtk-3.0/settings.ini
 ###############################################################################
 ############################## i3wm ###########################################
 ###############################################################################
-sudo apt install i3 i3blocks
+sudo apt install i3 i3blocks rofi
 # ONLY for i3wm beginners who want gnome helpers inside of i3wm.
 # dont do it if you want to get the plain i3wm experience!!
 /usr/lib/apt/apt-helper download-file http://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2018.01.30_all.deb keyring.deb SHA256:baa43dbbd7232ea2b5444cae238d53bebb9d34601cc000e82f11111b1889078a
