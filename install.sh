@@ -41,7 +41,15 @@ pip install termcolor
 ###############################################################################
 ######################### alacritty GPU terminal ##############################
 ###############################################################################
+# ubuntu:
 sudo snap install alacritty --classic
+
+# debian:
+sudo add-apt-repository ppa:mmstick76/alacritty
+gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv 8AC9B4BBBAB4900B
+gpg --export --armor 8AC9B4BBBAB4900B | sudo apt-key add -
+sudo apt update
+sudo apt install alacritty
 
 ###############################################################################
 ######################### distro specifics ####################################
