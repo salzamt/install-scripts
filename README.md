@@ -220,3 +220,8 @@ nm-applet
 # rest of the suite:
 nextcloud
 turtl notes app https://turtlapp.com/
+
+
+# dotfiles management
+chezmoi
+https://www.chezmoi.io/docs/quick-start/
