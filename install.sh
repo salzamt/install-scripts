@@ -19,6 +19,10 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
 pip install --upgrade setuptools
 pip3 install --upgrade setuptools
 
+pip install pip-tools
+pip3 install pip-tools
+
+
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
