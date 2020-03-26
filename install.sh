@@ -23,6 +23,9 @@ pip install pip-tools
 pip3 install pip-tools
 
 
+pip install tools
+pip3 install tools
+
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
