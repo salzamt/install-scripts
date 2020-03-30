@@ -213,9 +213,12 @@ use blueman-applet (from package blueman) to do bluetooth stuff
 more under http://iafonov.github.io/blog/ubuntu-macbook-pro-2015-notes.html
 
 
-## network manakger
+## networking
 nm-connection-editor
 nm-applet
+
+# mesure package loss
+mtr
 
 # rest of the suite:
 nextcloud
