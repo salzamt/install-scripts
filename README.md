@@ -218,7 +218,7 @@ nm-connection-editor
 nm-applet
 
 # mesure package loss
-mtr
+mtr mtr-tiny
 
 # rest of the suite:
 nextcloud
