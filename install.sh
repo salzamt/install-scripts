@@ -340,3 +340,7 @@ cp /usr/local/share/doc/polybar/config ~/.config/polybar; polybar -c ~/.config/p
 In /etc/udev/rules.d/70-persistent-net.rules
 add:
 SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTRS{product}=="802.11 n WLAN", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="wlan*", NAME="wlan1"
+
+
+# add ssh key for ssh agent forwarding
+ssh-add -k
