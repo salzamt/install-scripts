@@ -116,22 +116,7 @@ export MYGID=$GID
 export MYUID=$UID
 
 alias ll='ls -lahtr'
-alias rasp="ssh -p 17722 p@192.168.0.22"
-alias worktime="pipenv run python /home/riccardo/workspace/togglore/run.py since 2017.09.15"
 
-alias rukai="ssh -p 19091 salzamt@rukai.ubergrape.com"
-alias yami="ssh -p 17722 salzamt@yami.ubergrape.com"
-alias yami2="ssh -p 17722 salzamt@yami2.ubergrape.com"
-alias toda="ssh -p 17722 salzamt@toda.ubergrape.com"
-alias kavalan="ssh -p 17722 salzamt@kavalan.ubergrape.com"
-alias pangcah="ssh -p 17722 salzamt@pangcah.ubergrape.com"
-alias tao="ssh -p 17722 salzamt@tao.ubergrape.com"
-alias amis="ssh -p 17722 salzamt@amis.ubergrape.com"
-alias amis-old="ssh -p 17722 salzamt@amis-old.ubergrape.com"
-alias truku="ssh -p 17722 salzamt@truku.ubergrape.com"
-alias seediq="ssh -p 17722 salzamt@seediq.ubergrape.com"
-alias stress="ssh -p 17722 grape@stress.ubergrape.com"
-alias gr="cd ~/workspace/chatgrape && grapedev/enter-runtime.sh"
 alias calc="qalc"
 alias reswap="sudo swapoff -a && sudo swapon -a"
 
