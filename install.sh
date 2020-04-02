@@ -38,6 +38,9 @@ sudo apt install \
   gtk-recordmydesktop blueman gthumb openvpn xautolock \
   gpick exfat-fuse exfat-utils hfsprogs steam thunderbird testdisk blender \
   pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio earlyoom 
+  
+# latex stuff (texlive and texmaker)
+sudo apt-get install texlive-full texmaker
 
 sudo snap install spotify vlc audacity whatsdesk viking-gps
 
