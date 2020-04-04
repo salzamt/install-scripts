@@ -15,6 +15,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   ttf-dejavu git x11-utils arandr feh zsh tmux vifm pwgen nmap tcpdump \
   tmux rsync zip unzip htop iftop iotop whois dnsutils telnet bridge-utils mtr mtr-tiny\
   apt-transport-https ca-certificates yamllint htop pavucontrol gparted gpart stress \
+  fzf # cli fuzzy finder
 
 # pet snippet manager
 cd ~/Downloads
