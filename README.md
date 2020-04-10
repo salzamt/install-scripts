@@ -43,11 +43,9 @@ audacity for edigint
 pavucontrol mixing in/outputs and applications
 
 ## video editor
+mainly pitivi, also:
 shotcut, openshot, blender and flowblade
 https://jliljebl.github.io/flowblade/download.html
-
-pitivi
-
 
 ## siple image editor 
 pinta
