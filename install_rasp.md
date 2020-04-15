@@ -13,3 +13,8 @@ sudo snap connect nextcloud:removable-media
 sudo snap set nextcloud php.memory-limit=512M
 
 curl -sSL https://raw.githubusercontent.com/nextcloud/nextcloudpi/master/install.sh | sudo bash
+
+
+# spotify
+https://github.com/dtcooper/raspotify
+with config change user/pass to be availabe via www
