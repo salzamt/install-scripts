@@ -51,10 +51,10 @@ https://jliljebl.github.io/flowblade/download.html
 pinta
 
 ## photo editor
-Darktable and Shotwell, gpicka for color picking, gthumb for organizing
-inkscape
-gimp
-kolourpaint
+gopro import: Shotwell
+phto organizer: gthumb
+image manipulation: inkscape gimp darktable
+color picking: gpicka
 
 ## screenshot helper
 deepin-screenshot
