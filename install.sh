@@ -343,6 +343,20 @@ cd polybar && ./build.sh
 cp /usr/local/share/doc/polybar/config ~/.config/polybar; polybar -c ~/.config/polybar example
 
 
+# install speedtest
+sudo apt-get install gnupg1 apt-transport-https dirmngr
+export INSTALL_KEY=379CE192D401AB61
+# Ubuntu versions supported: xenial, bionic
+# Debian versions supported: jessie, stretch, buster
+export DEB_DISTRO=$(lsb_release -sc)
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys $INSTALL_KEY
+echo "deb https://ookla.bintray.com/debian ${DEB_DISTRO} main" | sudo tee  /etc/apt/sources.list.d/speedtest.list
+sudo apt-get update
+# Other non-official binaries will conflict with Speedtest CLI
+# Example how to remove using apt-get
+# sudo apt-get remove speedtest-cli
+sudo apt-get install speedtest
+
 
 # rename network interface if name is too long
 In /etc/udev/rules.d/70-persistent-net.rules
@@ -352,3 +366,5 @@ SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTRS{product}=="802.11 n WLAN",
 
 # add ssh key for ssh agent forwarding
 ssh-add -k
+
+
