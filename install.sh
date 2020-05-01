@@ -305,6 +305,18 @@ git clone https://github.com/glsorre/i3-gnome
 cd i3-gnome
 sudo make install
 
+# droidcam for mounting an android cam into the system (android apk name: droidcam)
+cd /tmp/
+wget https://www.dev47apps.com/files/linux/droidcam_latest.zip
+echo "7775e36b5325dc1f32d485eb3cc72fd1 droidcam_latest.zip" | md5sum -c --
+unzip droidcam_latest.zip -d droidcam && cd droidcam
+sudo ./install
+lsmod | grep v4l2loopback_dc
+droidcam
+# droidcam-cli
+# droidcam
+
+
 # i3 alternating spiral layout
 # alternating layout for i3
 cd ~/workspace
