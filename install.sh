@@ -185,6 +185,13 @@ systemctl enable nordvpn_conn.service
 # 1password CURRENTLY MANUALLY
 # https://support.1password.com/command-line-getting-started/
 
+# cli client from https://app-updates.agilebits.com/product_history/CLI
+cd ~/Downloads 
+wget "https://cache.agilebits.com/dist/1P/op/pkg/v0.10.0/op_linux_amd64_v0.10.0.zip"
+unzip op_linux_amd64_v0.10.0.zip
+sudo mv op /usr/local/bin
+op signin https://my.1password.com salzamt@live.com
+
 ###############################################################################
 ######################### docker ######@#######################################
 ###############################################################################
