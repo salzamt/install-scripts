@@ -107,6 +107,7 @@ Pin-Priority: 10" | sudo tee -a /etc/apt/preferences.d/99pin-unstable
 
 sudo apt update
 sudo apt install -t unstable firefox
+sudo apt install -t unstable qutebrowser
 
 ###############################################################################
 ######################### ppas for fancy apps #################################
