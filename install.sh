@@ -42,12 +42,12 @@ sudo apt install \
   wireshark deepin-screenshot  geany gnome-screenshot scrot redshift-gtk \
   gtk-recordmydesktop blueman gthumb openvpn xautolock \
   gpick exfat-fuse exfat-utils hfsprogs steam thunderbird testdisk blender \
-  pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio earlyoom krita
+  pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio earlyoom krita viking
   
 # latex stuff (texlive and texmaker)
 sudo apt-get install texlive-full texmaker
 
-sudo snap install spotify vlc audacity whatsdesk viking-gps
+sudo snap install spotify vlc audacity whatsdesk
 
 # enable earlyOOM killer (https://github.com/rfjakob/earlyoom)
 sudo systemctl enable earlyoom
