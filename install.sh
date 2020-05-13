@@ -42,8 +42,11 @@ sudo apt install \
   wireshark deepin-screenshot  geany gnome-screenshot scrot redshift-gtk \
   gtk-recordmydesktop blueman gthumb openvpn xautolock \
   gpick exfat-fuse exfat-utils hfsprogs steam thunderbird testdisk blender \
-  pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio earlyoom krita viking
-  
+  pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio krita viking
+
+# if very little memory:
+sudo apt install earlyoom
+
 # latex stuff (texlive and texmaker)
 sudo apt-get install texlive-full texmaker
 
