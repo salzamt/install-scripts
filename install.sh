@@ -16,6 +16,8 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   tmux rsync zip unzip htop iftop iotop whois dnsutils telnet bridge-utils mtr mtr-tiny\
   apt-transport-https ca-certificates yamllint htop pavucontrol gparted gpart stress flatpack \
   fzf # cli fuzzy finder
+  
+  
 
 # pet snippet manager
 cd ~/Downloads
@@ -42,7 +44,7 @@ sudo apt install \
   wireshark deepin-screenshot  geany gnome-screenshot scrot redshift-gtk \
   gtk-recordmydesktop blueman gthumb openvpn xautolock \
   gpick exfat-fuse exfat-utils hfsprogs steam thunderbird testdisk blender \
-  pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio krita viking
+  pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio krita viking install nfs-kernel-server
 
 # if very little memory:
 sudo apt install earlyoom
