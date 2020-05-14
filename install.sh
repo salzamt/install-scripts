@@ -390,6 +390,7 @@ SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTRS{product}=="802.11 n WLAN",
 # add ssh key for ssh agent forwarding
 ssh-add -k
 
-# instll libvirt
-sudo apt install virt-manager
+# instll virtualilzation (libvirt, virt-manager and vagrant)
+sudo apt install virt-manager vagrant libvirt-dev
 sudo adduser $(whoami) libvirt
+CONFIGURE_ARGS="with-libvirt-include=/usr/include/libvirt" vagrant plugin install vagrant-libvirt
