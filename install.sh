@@ -390,4 +390,6 @@ SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTRS{product}=="802.11 n WLAN",
 # add ssh key for ssh agent forwarding
 ssh-add -k
 
-
+# instll libvirt
+sudo apt install virt-manager
+sudo adduser $(whoami) libvirt
