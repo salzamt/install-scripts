@@ -396,3 +396,16 @@ ssh-add -k
 sudo apt install virt-manager vagrant libvirt-dev
 sudo adduser $(whoami) libvirt
 CONFIGURE_ARGS="with-libvirt-include=/usr/include/libvirt" vagrant plugin install vagrant-libvirt
+
+# manually: install newest python on debian
+sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libssl-dev libreadline-dev libffi-dev curl libbz2-dev
+cd Downloads
+mkdir python38
+cd python38
+curl -O https://www.python.org/ftp/python/3.8.2/Python-3.8.2.tar.xz
+tar -xf Python-3.8.2.tar.xz
+cd Python-3.8.2
+./configure --enable-optimizations
+make -j 14
+sudo make altinstall
+python3.8 --version
