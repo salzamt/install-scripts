@@ -226,8 +226,13 @@ sudo usermod -aG docker $(whoami)
 ###############################################################################
 ######################### pycharm #####@#######################################
 ###############################################################################
+# either via umake, snap or manually
 umake ide pycharm-professional
 
+# manually: https://www.jetbrains.com/pycharm/download/#section=linux
+
+# symlink for pycharm in rofi
+sudo ln -s /opt/jetbrains/pycharm-2020.2/bin/pycharm.sh /usr/local/bin/Pycharm
 
 ###############################################################################
 ######################### python-vim ide ######################################
