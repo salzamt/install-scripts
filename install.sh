@@ -17,8 +17,9 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   apt-transport-https ca-certificates yamllint htop pavucontrol gparted gpart stress flatpack \
   fzf # cli fuzzy finder
   
-  
-
+# set default editor to vim
+sudo update-alternatives --set editor /usr/bin/vim.basic
+ 
 # pet snippet manager
 cd ~/Downloads
 wget https://github.com/knqyf263/pet/releases/download/v0.3.0/pet_0.3.0_linux_amd64.deb
