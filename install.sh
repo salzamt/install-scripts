@@ -45,7 +45,8 @@ sudo apt install \
   wireshark deepin-screenshot  geany gnome-screenshot scrot redshift-gtk \
   gtk-recordmydesktop blueman gthumb openvpn xautolock \
   gpick exfat-fuse exfat-utils hfsprogs steam thunderbird testdisk blender \
-  pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio krita viking install nfs-kernel-server
+  pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio krita viking install nfs-kernel-server \
+  nodejs npm
 
 # if very little memory:
 sudo apt install earlyoom
@@ -156,6 +157,9 @@ echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" |  sudo tee -a /etc/apt
 wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-key add -
 sudo apt update && sudo apt install insomnia
 
+
+# install tldr man page excerpt
+sudo npm install -g tldr
 
 ###############################################################################
 ######################### nordvpn #####@#######################################
