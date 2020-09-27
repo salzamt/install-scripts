@@ -170,11 +170,14 @@ wget https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0
 sudo dpkg -i nordvpn-release_1.0.0_all.deb
 sudo apt update
 sudo apt install nordvpn
+nordvpn login
+nordvpn set technology nordlynx
+nordvpn c
 
 # nordlynx wireguard
-sudo add-apt-repository ppa:wireguard/wireguard
-sudo apt-get install wireguard
-nordvpn set technology nordlynx
+# sudo add-apt-repository ppa:wireguard/wireguard
+# sudo apt-get install wireguard
+# nordvpn set technology nordlynx
 
 # systemd for nordvpn todo
 /etc/systemd/system/i3lock.service /etc/systemd/system/nordvpn_disc.service
