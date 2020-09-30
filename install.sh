@@ -46,7 +46,7 @@ sudo apt install \
   gtk-recordmydesktop blueman gthumb openvpn xautolock \
   gpick exfat-fuse exfat-utils hfsprogs steam thunderbird testdisk blender \
   pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio krita viking install nfs-kernel-server \
-  nodejs npm
+  nodejs npm samba
 
 # if very little memory:
 sudo apt install earlyoom
