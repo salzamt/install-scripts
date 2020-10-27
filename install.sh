@@ -48,6 +48,12 @@ sudo apt install \
   pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio krita viking install nfs-kernel-server \
   nodejs npm samba v4l-utils qv4l2
 
+
+# fix ralink issues
+sudo su
+echo "options rt2800usb nohwcrypt=1" > /etc/modprobe.d/rt2800usb.conf
+exit
+
 # if very little memory:
 sudo apt install earlyoom
 
