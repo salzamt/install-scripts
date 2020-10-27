@@ -16,6 +16,9 @@ if you are not happy with the gnome notification system (test if it works fine f
 ## backups 
 timeshift
 
+## webcam settings
+qv4l2 
+
 ## VPN
 nordvpn with CyberSec and Killswitch
 getting started, login with
