@@ -13,6 +13,9 @@ use `xwininfo` to get the window class and assign in i3 config f.e. `assign [cla
 ## notifications
 if you are not happy with the gnome notification system (test if it works fine for you regarding font size and multi display with `notify-send --icon=gtk-info Test "This is a test"`, dunst (https://dunst-project.org/) is a great alternative. docs tbd
 
+## markdown
+ghostwriter
+
 ## backups 
 timeshift
 
