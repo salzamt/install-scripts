@@ -38,6 +38,9 @@ pip3 install tools
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# repo for ghostwriter
+sudo add-apt-repository ppa:wereturtle/ppa
+
 # fancy tools
 # geany: text editor
 # testdisk: for photorec (deleted / lost file recovery)
@@ -46,8 +49,7 @@ sudo apt install \
   gtk-recordmydesktop blueman gthumb openvpn xautolock \
   gpick exfat-fuse exfat-utils hfsprogs steam thunderbird testdisk blender \
   pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio krita viking install nfs-kernel-server \
-  nodejs npm samba v4l-utils qv4l2
-
+  nodejs npm samba v4l-utils qv4l2 ghostwriter
 
 # fix ralink issues
 sudo su
