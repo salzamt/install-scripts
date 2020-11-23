@@ -39,7 +39,8 @@ pip3 install tools
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # repo for ghostwriter
-sudo add-apt-repository ppa:wereturtle/ppa
+# not working, 404
+# sudo add-apt-repository ppa:wereturtle/ppa
 
 # fancy tools
 # geany: text editor
@@ -108,21 +109,8 @@ sudo apt install build-essential devscripts
 
 # if newest firefox is not installed or instead of ESR you want a newer one
 
-# add unstable/testing repo
-echo "deb http://deb.debian.org/debian/ unstable main contrib non-free" | sudo tee -a /etc/apt/sources.list
-# pin / lower priority for those unstable packages to stable so its the default
-# choice for everything not installed explicitly as "testing"
-echo "Package: *
-Pin: release a=stable
-Pin-Priority: 900
-
-Package: *
-Pin release a=unstable
-Pin-Priority: 10" | sudo tee -a /etc/apt/preferences.d/99pin-unstable
-
-sudo apt update
-sudo apt install -t unstable firefox
-sudo apt install -t unstable qutebrowser
+flatpak install flathub org.mozilla.firefox
+# vim  /etc/profile -> add flatpack to path  PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/opt:/var/lib/flatpak/exports/bin"
 
 ###############################################################################
 ######################### ppas for fancy apps #################################
