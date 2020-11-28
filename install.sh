@@ -418,3 +418,11 @@ cd Python-3.8.2
 make -j 14
 sudo make altinstall
 python3.8 --version
+
+
+
+
+# configure your keyboard to your needs:
+`sudo dpkg-reconfigure keyboard-configuration`
+# left logo key for temporary layout switch, right one for permanent
+
