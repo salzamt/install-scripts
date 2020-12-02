@@ -50,7 +50,11 @@ sudo apt install \
   gtk-recordmydesktop blueman gthumb openvpn xautolock \
   gpick exfat-fuse exfat-utils hfsprogs steam thunderbird testdisk blender \
   pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio krita viking install nfs-kernel-server \
-  nodejs npm samba v4l-utils qv4l2 ghostwriter mpd polybar connman
+  nodejs npm samba v4l-utils qv4l2 ghostwriter mpd polybar
+
+
+# install proper CLI network manager
+sudo apt purge network-manager && sudo apt install connman
 
 # fix ralink issues
 sudo su
