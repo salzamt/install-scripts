@@ -246,7 +246,7 @@ sudo ln -s /opt/jetbrains/pycharm-2020.2/bin/pycharm.sh /usr/local/bin/Pycharm
 ###############################################################################
 sudo apt install libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev \
   libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev \
-  python-dev python3-dev git ctags vim-gtk
+  python-dev python3-dev python3-docutils gcc git ctags vim-gtk
 cd ~/workspace
 git clone https://github.com/rapphil/vim-python-ide.git && cd vim-python-ide && ./install.sh
 
