@@ -2,6 +2,7 @@
 ## window manager
 i3 with i3blocks and i3-flashback / i3-gnome + gnome-tweak-tool for optimizations on theme and 4k saling with subpixels. redshift for filtering blue colors at night.
 window switcher and application launcher: rofi, https://github.com/davatorium/rofi
+i3blocks from https://github.com/vivien/i3blocks-contrib and https://github.com/Anachron/i3blocks
 
 ### setup i3exit (from this repo) for hotkey mod+ctrl+w
 `sudo cp i3exit.sh /usr/local/sbin/i3exit`
