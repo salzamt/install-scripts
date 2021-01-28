@@ -10,6 +10,10 @@ sudo apt update
 sudo apt install netselect-apt && sudo netselect-apt && sudo apt update
 sudo apt upgrade
 
+
+# install draw.io desktop
+https://github.com/jgraph/drawio-desktop/releases/latest
+
 # basic tools
 sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   ttf-dejavu git x11-utils arandr feh zsh tmux vifm pwgen nmap tcpdump \
