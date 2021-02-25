@@ -64,9 +64,10 @@ drawing: krita
 image manipulation: inkscape gimp darktable
 color picking: gpicka
 
-## screenshot helper
-deepin-screenshot
-gtk-recordmydesktop
+## screenshot & recording
+deepin-screenshot # screen shot, simple and fast
+kazam # screen recording
+obs-studio # Open Broadcaster Software Studio
 
 ## browser
 firefox w/ tridactyl
