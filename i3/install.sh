@@ -8,7 +8,7 @@ cp config ~/.config/i3/config
 
 
 
-Add a file /etc/systemd/system/i3lock.service with the following contents:
+# Add a file /etc/systemd/system/i3lock.service with the following contents and make sure the User is set properly and the DISPLAY is the right one either (echo $DISPLAY):
 
 # source: https://bbs.archlinux.org/viewtopic.php?pid=1170536#p1170536 by 65kid
 #
@@ -17,13 +17,13 @@ Description=i3lock
 Before=sleep.target
 
 [Service]
-User=the_login_of_the_user_that_suspends
+User=riccardo
 Type=forking
-Environment=DISPLAY=:0
+Environment=DISPLAY=:1
 ExecStart=/usr/bin/i3lock
 
 [Install]
 WantedBy=sleep.target
-
+~
 # now enable it with
 sudo systemctl enable i3lock.service
