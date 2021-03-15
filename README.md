@@ -73,12 +73,16 @@ obs-studio # Open Broadcaster Software Studio
 firefox w/ tridactyl
 
 ### more direct scrolling
-`abount:config`
+`about:config`
 `general.smoothScroll` -> false
 
 ### high DPI screens
-`abount:config`
+`about:config`
 `layout.css.devPixelsPerPx` -> 1.75 so the interface has a better size
+
+### disable annoying tab detach with mouse
+`about:config`
+`browser.tabs.allowTabDetach` -> false
 
 ## search engine 
 ecosia & duckduckgo
