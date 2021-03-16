@@ -116,10 +116,11 @@ modprobe wl
 sudo apt install build-essential devscripts
 
 # if newest firefox is not installed or instead of ESR you want a newer one
-
+# method 1 (quick but somehow memory hungry/bad video performance) via flatpak:
 flatpak install flathub org.mozilla.firefox
 # vim  /etc/profile -> add flatpack to path  PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/opt:/var/lib/flatpak/exports/bin"
-# or from tar file (rcommended but more steps)
+
+# method 2 via tar file (rcommended but more steps)
 mkdir -p ~/apps/firefox
 cd ~/apps/firefox
 wget https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US
