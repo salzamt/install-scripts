@@ -76,6 +76,8 @@ firefox w/ tridactyl
 `about:config`
 `general.smoothScroll` -> false
 
+browser.fullscreen.autohide -> false
+
 ### high DPI screens
 `about:config`
 `layout.css.devPixelsPerPx` -> 1.75 so the interface has a better size
