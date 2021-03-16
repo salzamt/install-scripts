@@ -119,6 +119,28 @@ sudo apt install build-essential devscripts
 
 flatpak install flathub org.mozilla.firefox
 # vim  /etc/profile -> add flatpack to path  PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/opt:/var/lib/flatpak/exports/bin"
+# or from tar file (rcommended but more steps)
+mkdir -p ~/apps/firefox
+cd ~/apps/firefox
+wget https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US
+tar -xcv <firefox...>
+ln -s ~/apps/firefox/firefox ~/.local/bin/firefox
+
+# create desktop entry (also for rofi to find ff with an icon, replace /home/riccardo with your home dir)
+cat > ~/.local/share/applications/firefox.desktop <<EOF
+[Desktop Entry]
+Encoding=UTF-8
+Name=Mozilla Firefox
+GenericName=Web Browser
+Comment=Browse the Web
+Exec=firefox
+Icon=/home/riccardo/apps/firefox/browser/chrome/icons/default/default32.png
+Terminal=false
+Type=Application
+Categories=Application;Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;
+StartupNotify=True
+EOF
 
 ###############################################################################
 ######################### ppas for fancy apps #################################
