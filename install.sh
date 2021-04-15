@@ -266,7 +266,17 @@ sudo groupadd docker
 sudo usermod -aG docker $(whoami)
 
 ###############################################################################
-######################### pycharm #####@#######################################
+######################### github cli #############################################
+###############################################################################
+
+# https://github.com/cli/cli/blob/trunk/docs/install_linux.md#debian-ubuntu-linux-apt
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+sudo apt-add-repository https://cli.github.com/packages
+sudo apt update
+sudo apt install gh
+
+###############################################################################
+######################### pycharm #############################################
 ###############################################################################
 # either via umake, snap or manually
 umake ide pycharm-professional
