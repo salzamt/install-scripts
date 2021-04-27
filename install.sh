@@ -78,6 +78,7 @@ sudo apt install earlyoom
 sudo apt-get install texlive-full texmaker
 
 sudo snap install spotify vlc audacity whatsdesk
+sudo snap install android-studio --classic
 
 # enable earlyOOM killer (https://github.com/rfjakob/earlyoom)
 sudo systemctl enable earlyoom
