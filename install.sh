@@ -59,7 +59,7 @@ sudo apt install \
   wireshark deepin-screenshot  geany gnome-screenshot scrot redshift-gtk \
   gtk-recordmydesktop blueman gthumb openvpn xautolock \
   gpick exfat-fuse exfat-utils hfsprogs steam thunderbird testdisk blender \
-  pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio krita viking install nfs-kernel-server \
+  pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio krita nfs-kernel-server \
   nodejs npm samba v4l-utils qv4l2 ghostwriter mpd polybar libreoffice
 
 
@@ -126,6 +126,8 @@ sudo apt install build-essential devscripts
 # method 1 (quick but somehow memory hungry/bad video performance) via flatpak:
 flatpak install flathub org.mozilla.firefox
 # vim  /etc/profile -> add flatpack to path  PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/opt:/var/lib/flatpak/exports/bin"
+
+flatpak install flathub org.viking.Viking
 
 # method 2 via tar file (rcommended but more steps)
 mkdir -p ~/apps/firefox
