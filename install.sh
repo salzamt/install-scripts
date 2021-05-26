@@ -58,7 +58,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 sudo apt install \
   wireshark deepin-screenshot  geany gnome-screenshot scrot redshift-gtk \
   gtk-recordmydesktop blueman gthumb openvpn xautolock \
-  gpick exfat-fuse exfat-utils hfsprogs steam thunderbird testdisk blender \
+  gpick exfat-fuse exfat-utils hfsprogs steam geary testdisk blender \
   pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio krita nfs-kernel-server \
   nodejs npm samba v4l-utils qv4l2 ghostwriter mpd polybar libreoffice gpsbabel-gui
 
