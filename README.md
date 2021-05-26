@@ -119,7 +119,7 @@ VIM https://github.com/rapphil/vim-python-ide.git
 1Passowrd for Firefox and as native client (https://support.1password.com/command-line-getting-started/)
 
 ## email
-mailspring
+geary
 
 ## messaging
 Signal Native, Chatgrape, whatsapp (whatsdesk)
