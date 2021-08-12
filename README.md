@@ -241,3 +241,7 @@ turtl notes app https://turtlapp.com/
 # dotfiles management
 chezmoi
 https://www.chezmoi.io/docs/quick-start/
+
+
+# logitech receivers
+https://github.com/pwr-Solaar/Solaar
