@@ -479,3 +479,7 @@ python3.8 --version
 `sudo dpkg-reconfigure keyboard-configuration`
 # left logo key for temporary layout switch, right one for permanent
 
+
+
+# for chatgrape
+sudo apt-get install libxml2-dev libxmlsec1-dev libxmlsec1-openssl
