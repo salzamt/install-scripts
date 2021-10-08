@@ -4,8 +4,13 @@ sudo apt install netselect-apt && sudo netselect-apt && sudo apt update
 sudo apt upgrade
 
 #luks encryption
-sudo apt install libblockdev-crypto2
+sudo apt install libblockdev-crypto2 
 sudo systemctl restart udisks2.service
+
+
+# nfs
+sudo apt install nfs-kernel-server
+sudo chown -R osmc:osmc /media/salzstore
 
 # nextcloud setup
 snap install nextcloud
