@@ -60,7 +60,7 @@ sudo apt install \
   gtk-recordmydesktop blueman gthumb openvpn xautolock \
   gpick exfat-fuse exfat-utils hfsprogs steam geary thunderbird testdisk blender \
   pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio krita nfs-kernel-server \
-  nodejs npm samba v4l-utils qv4l2 ghostwriter mpd polybar libreoffice gpsbabel-gui
+  nodejs npm samba cifs-utils v4l-utils qv4l2 ghostwriter mpd polybar libreoffice gpsbabel-gui
   solaar # logitech receiver config
 
 
