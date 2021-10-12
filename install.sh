@@ -61,7 +61,7 @@ sudo apt install \
   gpick exfat-fuse exfat-utils hfsprogs steam geary thunderbird testdisk blender \
   pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio krita nfs-kernel-server \
   nodejs npm samba cifs-utils v4l-utils qv4l2 ghostwriter mpd polybar libreoffice gpsbabel-gui
-  solaar # logitech receiver config
+  solaar # logitech receiver config playonlinux
 
 
 # install proper CLI network manager
