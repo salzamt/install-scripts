@@ -245,3 +245,10 @@ https://www.chezmoi.io/docs/quick-start/
 
 # logitech receivers
 https://github.com/pwr-Solaar/Solaar
+
+# gaming
+playonlinux
+steam
+
+# CAD
+freecad
