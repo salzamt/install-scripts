@@ -484,3 +484,7 @@ python3.8 --version
 
 # for chatgrape
 sudo apt-get install libxml2-dev libxmlsec1-dev libxmlsec1-openssl
+
+
+# radeontop
+sudo apt install radeontop
