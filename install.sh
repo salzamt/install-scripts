@@ -403,19 +403,7 @@ sudo dpkg -i playerctl-2.0.1_amd64.deb
 wget https://wallpapercave.com/wp/y3MGd53.jpg ~/Pictures/wallpaper.jpg
 
 # install dunst notifications (ubuntu)
-sudo apt install libdbus-1-dev libx11-dev libxinerama-dev libxrandr-dev libxss-dev libglib2.0-dev libpango1.0-dev libgtk-3-dev libxdg-basedir-dev libnotify-dev
-cd workspace
-git clone https://github.com/dunst-project/dunst.git && cd dunst && nmake && nsudo make install
-#check out dunst espeak to have your notifications read out
-sudo apt-get install espeak
-
-# dunst on debian:
-sudo apt install libdbus-1-dev libx11-dev libxinerama-dev libxrandr-dev libxss-dev libglib2.0-dev libpango1.0-dev libgtk-3-dev libxdg-basedir-dev libnotify-dev libcairo2-dev libfontconfig1-dev libfreetype6-dev libxft-dev libfreetype6=2.9.1-3+deb10u1
-cd workspace
-git clone https://github.com/dunst-project/dunst.git
-cd dunst
-make
-sudo make install
+sudo apt install dunst
 
 # i3blocks systemd todo
 /etc/systemd/system/i3lock.service
