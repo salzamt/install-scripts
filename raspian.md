@@ -20,3 +20,17 @@ most important stuff
 ```
 sudo  apt-get install curl i3 i3blocks redshift-gtk gtk-recordmydesktop blueman openvpn feh zsh tmux vim vifm timeshift pinta git hardinfo
 ```
+
+
+
+# CUPS with samsung ml25-25
+```
+sudo apt-get install cups
+sudo systemctl start cups
+sudo systemctl enable cups
+sudo vim /etc/cups/cupsd.conf
+sudo systemctl restart cups
+sudo usermod -a -G lpadmin osmc
+sudo apt install foomatic-db printer-driver-splix
+sudo systemctl restart cups
+```
