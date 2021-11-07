@@ -480,3 +480,5 @@ sudo apt install radeontop
 
 # brightness control:
 sudo apt install light
+sudo usermod -a -G video riccardo
+sudo chmod +s /usr/bin/light
