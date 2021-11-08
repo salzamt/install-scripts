@@ -482,3 +482,9 @@ sudo apt install radeontop
 sudo apt install light
 sudo usermod -a -G video riccardo
 sudo chmod +s /usr/bin/light
+
+
+
+# set dark theme
+ls -d /usr/share/themes/* |xargs -L
+gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark' 
