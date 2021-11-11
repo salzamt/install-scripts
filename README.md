@@ -245,5 +245,9 @@ https://github.com/pwr-Solaar/Solaar
 playonlinux
 steam
 
+# terminal json processor
+jq as in 
+`curl .... | jq`
+
 # CAD
 freecad
