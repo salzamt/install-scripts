@@ -86,9 +86,6 @@ browser.fullscreen.autohide -> false
 `about:config`
 `browser.tabs.allowTabDetach` -> false
 
-## search engine 
-ecosia & duckduckgo
-
 ## media player 
 vlc
 
@@ -99,7 +96,7 @@ hardinfo
 feh (apt-get install feh) and configure it in i3 conf
 
 ## screen arrangement
-xrandr (cli) & arandr (gui)
+xrandr / arandr 
 
 ## cloud storage and sync manager
 megasync
@@ -108,8 +105,7 @@ megasync
 zsh with oh-my-zsh
 
 # terminal
-alacritty (gpu accelerated) with tmux and tmuxinator
-kitty (w/o tmux, gpu accel) with https://github.com/dexpota/kitty-themes
+alacritty
 
 ## Development
 pycharm-professional, vim, docker-ce, docker-compose
