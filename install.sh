@@ -488,3 +488,5 @@ sudo chmod +s /usr/bin/light
 # set dark theme
 ls -d /usr/share/themes/* |xargs -L
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark' 
+# zoom for pdf reader
+gsettings set org.gnome.Evince page-cache-size 2000
