@@ -23,3 +23,19 @@ curl -sSL https://raw.githubusercontent.com/nextcloud/nextcloudpi/master/install
 # spotify
 https://github.com/dtcooper/raspotify
 with config change user/pass to be availabe via www
+
+
+# megasync cli for ARM
+```
+wget -qO - https://mega.nz/linux/MEGAsync/Raspbian_10.0/Release.key | sudo apt-key add -
+sudo vim /etc/apt/sources.list.d/MEGA.nz.list
+```
+```
+# Mega.nz repo for 32bit (compatable with 64-bit) Raspberry Pi
+deb [arch=armhf] https://mega.nz/linux/MEGAsync/Raspbian_10.0/ ./
+```
+
+```
+sudo apt update && sudo apt install megacmd
+mega-cmd
+```
