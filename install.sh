@@ -497,3 +497,9 @@ gsettings set org.gnome.Evince page-cache-size 2000
 
 # ruby stuff
 sudo gem install rubocop
+
+
+
+# neo vim
+# bin from https://github.com/neovim/neovim/releases/tag/v0.5.1
+sudo mv nvim-linux64/bin/nvim /usr/local/bin/
