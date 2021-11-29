@@ -500,6 +500,6 @@ sudo gem install rubocop
 
 
 
-# neo vim
+# neo vim via app image
 # bin from https://github.com/neovim/neovim/releases/tag/v0.5.1
-sudo mv nvim-linux64/bin/nvim /usr/local/bin/
+chmod u+x nvim.appimage && ./nvim.appimage
