@@ -7,7 +7,18 @@ sudo dpkg --add-architecture i386
 
 # add sbin to path maybe??
 
+# basic stuff
+sudo apt-get install software-properties-common
 
+
+# for nm-applet and bc its so beautiful
+sudo apt install network-manager-gnome
+sudo apt install qt5ct qt5-style-plugins
+echo "export QT_QPA_PLATFORMTHEME=qt5ct" >> ~/.bash_profile
+
+
+# a good fallback-terminal
+sudo apt install xfce4-terminal
 
 # edit /etc/network/interfaces to ensure the interfaces listed in `ip a` are configured
 /sbin/ifup --all
@@ -20,6 +31,13 @@ exec i3 >> ~/.xinitrc
 
 # as user!
 echo "exec i3" | tee ~/.xinitrc
+
+# cli connection manager
+sudo apt install connman rfkill
+sudo gpasswd -a <username> netdev
+
+# graphical network manager applet
+sudo apt install nm-tray
 
 # if we checkout some repos
 mkdir ~/workspace
