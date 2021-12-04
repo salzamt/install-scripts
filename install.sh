@@ -2,6 +2,25 @@
 # add 32 bit support, for some packages
 sudo dpkg --add-architecture i386
 
+# add own user to sudoers file
+/sbin/usermod -aG sudo <username>
+
+# add sbin to path maybe??
+
+
+
+# edit /etc/network/interfaces to ensure the interfaces listed in `ip a` are configured
+/sbin/ifup --all
+
+# add the necessary bullseye sources to /etc/apt/sources.list
+apt update && apt install vim i3 xinit
+
+# add i3 to xorg init
+exec i3 >> ~/.xinitrc
+
+# as user!
+echo "exec i3" | tee ~/.xinitrc
+
 # if we checkout some repos
 mkdir ~/workspace
 
