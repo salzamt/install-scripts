@@ -540,3 +540,6 @@ sudo gem install rubocop
 # neo vim via app image
 # bin from https://github.com/neovim/neovim/releases/tag/v0.5.1
 chmod u+x nvim.appimage && ./nvim.appimage
+
+# 3d stuff
+sudo apt install slic3r freecad librecad
