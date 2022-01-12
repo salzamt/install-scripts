@@ -249,5 +249,7 @@ steam
 jq as in 
 `curl .... | jq`
 
-# CAD
-freecad
+# CAD / 3d printing
+freecad / librecad
+slic3r
+octoprint
