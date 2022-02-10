@@ -63,10 +63,6 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
 # set default editor to vim
 sudo update-alternatives --set editor /usr/bin/vim.basic
 
-# vim IDE options
-sudo apt install vim-youcompletemem
-vam install youcompleteme
-vam status
  
 # pet snippet manager
 cd ~/Downloads
@@ -544,3 +540,9 @@ chmod u+x nvim.appimage && ./nvim.appimage
 
 # 3d stuff
 sudo apt install slic3r freecad librecad
+
+
+# vim for ruby / rails 
+sudo apt install vim-youcompletem
+vam install youcompleteme
+vam status
