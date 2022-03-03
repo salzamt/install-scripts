@@ -311,6 +311,8 @@ sudo usermod -aG docker $(whoami)
 # git config
 git config merge.tool vimdiff
 git config merge.conflictstyle diff3
+touch ~/.gitignore
+git config --global core.excludesfile ~/.gitignore
 
 # https://github.com/cli/cli/blob/trunk/docs/install_linux.md#debian-ubuntu-linux-apt
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
