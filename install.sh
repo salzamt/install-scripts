@@ -560,3 +560,21 @@ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyr
 sudo apt-get update && sudo apt-get install google-cloud-cli
 sudo apt-get update && sudo apt-get install google-cloud-cli
 gcloud init
+
+
+# brotab for changing firefox tab in rofi
+pip install brotab
+bt install
+# install https://addons.mozilla.org/en-US/firefox/addon/brotab/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
+# restart firefox
+parse it as so:
+
+bt list | awk -F'\t' '{
+    print $2
+}' > urls-backup.txt
+
+Then open all URLs in urls-backup.txt with normal Firefox:
+
+while read url; do
+    firefox "$url"
+done < urls-backup.txt
