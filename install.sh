@@ -578,3 +578,8 @@ Then open all URLs in urls-backup.txt with normal Firefox:
 while read url; do
     firefox "$url"
 done < urls-backup.txt
+
+
+# polkit dialog for sudo prompt in graphical applications
+sudo apt install policykit-1-gnome
+sudo budgie-polkit-dialog
