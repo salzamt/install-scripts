@@ -583,3 +583,14 @@ done < urls-backup.txt
 # polkit dialog for sudo prompt in graphical applications
 sudo apt install policykit-1-gnome
 sudo budgie-polkit-dialog
+
+# cli timer app
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cd ~/workspace
+git clone git@github.com:prikhi/timerr.git
+cd timerr
+rustup default stable
+cargo build
+cargo install --path .
+# export PATH="${HOME}/.cargo/bin/:${PATH}"
+# timerr 2 "tee"
