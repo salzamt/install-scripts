@@ -115,6 +115,7 @@ sudo apt-get install texlive-full texmaker
 
 sudo snap install spotify vlc audacity whatsdesk
 sudo snap install android-studio --classic
+sudo snap install openboardview # for reading brd files of circuit boards
 
 # enable earlyOOM killer (https://github.com/rfjakob/earlyoom)
 sudo systemctl enable earlyoom
