@@ -595,3 +595,6 @@ cargo build
 cargo install --path .
 # export PATH="${HOME}/.cargo/bin/:${PATH}"
 # timerr 2 "tee"
+
+# install mac apps
+# deb package from https://github.com/darlinghq/darling/releases
