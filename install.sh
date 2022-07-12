@@ -585,6 +585,9 @@ done < urls-backup.txt
 sudo apt install policykit-1-gnome
 sudo budgie-polkit-dialog
 
+# i3blocks disk io
+sudo apt install dstat
+
 # cli timer app
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cd ~/workspace
