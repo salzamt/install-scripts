@@ -32,6 +32,10 @@ exec i3 >> ~/.xinitrc
 # as user!
 echo "exec i3" | tee ~/.xinitrc
 
+# cycle last windows https://github.com/olivierlemoal/i3-swap-focus
+pip install --upgrade i3-swap-focus
+
+
 # cli connection manager
 sudo apt install connman rfkill
 sudo gpasswd -a <username> netdev
