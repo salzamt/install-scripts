@@ -63,6 +63,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   fzf # cli fuzzy finder
   hstr # for zsh history searcj
   ncdu # interactive disk utilization utility
+  pcmanfm
   
 # set default editor to vim
 sudo update-alternatives --set editor /usr/bin/vim.basic
