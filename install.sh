@@ -609,10 +609,11 @@ cargo install --path .
 
 
 ## k9s and other kubernetes stuff
- /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
- echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/riccardo/.zshrc
- echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/riccardo/.zshrc
- eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
- sudo apt-get install build-essential
- brew install gcc
- brew install derailed/k9s/k9s
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/riccardo/.zshrc
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/riccardo/.zshrc
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+sudo apt-get install build-essential
+brew install gcc
+brew install derailed/k9s/k9s
+brew install helm
