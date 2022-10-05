@@ -39,3 +39,15 @@ deb [arch=armhf] https://mega.nz/linux/MEGAsync/Raspbian_10.0/ ./
 sudo apt update && sudo apt install megacmd
 mega-cmd
 ```
+
+
+# octoprint
+mkdir OctoPrint
+cd OctoPrint
+python3 -m venv venv
+source venv/bin/activate
+pip install pip --upgrade
+pip install --no-cache-dir  octoprint
+pip install "https://github.com/SimplyPrint/OctoPrint-Creality2xTemperatureReportingFix/archive/master.zip"
+pip install "https://github.com/jneilliii/OctoPrint-BedLevelingWizard/archive/master.zip"
+systemctl start octoprint (unnit file from here https://community.octoprint.org/t/setting-up-octoprint-on-a-raspberry-pi-running-raspberry-pi-os-debian/2337)
