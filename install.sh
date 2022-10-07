@@ -617,3 +617,13 @@ sudo apt-get install build-essential
 brew install gcc
 brew install derailed/k9s/k9s
 brew install helm
+
+
+
+# ruby environment
+## rbenv
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+# already in chezmoi? echo 'eval "$(~/.rbenv/bin/rbenv init - zsh)"' >> ~/.zshrc
+
+## ruby-build
+git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
