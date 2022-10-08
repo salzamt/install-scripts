@@ -627,3 +627,6 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
 ## ruby-build
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+
+# roll out config files
+chezmoi init --apply https://github.com/salzamt/chezmoi
