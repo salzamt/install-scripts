@@ -617,8 +617,9 @@ sudo apt-get install build-essential
 brew install gcc
 brew install derailed/k9s/k9s
 brew install helm
+brew install google-cloud-sdk
 
-
+gcloud components install kubectl # OR brew install kubectl
 
 # ruby environment
 ## rbenv
