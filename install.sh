@@ -631,3 +631,5 @@ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-b
 
 # roll out config files
 chezmoi init --apply https://github.com/salzamt/chezmoi
+
+git config --global core.excludesfile ~/Documents/gitignore
