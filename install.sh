@@ -103,8 +103,9 @@ sudo apt install \
   wireshark deepin-screenshot  geany gnome-screenshot scrot redshift-gtk \
   gtk-recordmydesktop blueman gthumb openvpn xautolock \
   gpick exfat-fuse exfat-utils hfsprogs steam geary thunderbird testdisk blender \
-  pulseaudio-equalizer qlandkartegt texlive ranger-fm projectm-pulseaudio krita nfs-kernel-server \
+  qlandkartegt texlive ranger-fm projectm-pulseaudio krita nfs-kernel-server \
   nodejs npm samba cifs-utils v4l-utils qv4l2 ghostwriter mpd polybar libreoffice gpsbabel-gui
+  lsp-plugins pulseeffects # equalizer
   solaar # logitech receiver config playonlinux freecad
 
 
