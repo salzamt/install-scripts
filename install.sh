@@ -30,6 +30,8 @@ exec i3 >> ~/.xinitrc
 
 # check modifier config 
 Xmodmap
+# assign modifier keys, test which is which
+xev
 
 # as user!
 echo "exec i3" | tee ~/.xinitrc
