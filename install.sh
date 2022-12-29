@@ -10,7 +10,6 @@ sudo dpkg --add-architecture i386
 # basic stuff
 sudo apt-get install software-properties-common
 
-
 # for nm-applet and bc its so beautiful
 sudo apt install network-manager-gnome
 sudo apt install qt5ct qt5-style-plugins
@@ -28,6 +27,9 @@ apt update && apt install vim i3 xinit
 
 # add i3 to xorg init
 exec i3 >> ~/.xinitrc
+
+# check modifier config 
+Xmodmap
 
 # as user!
 echo "exec i3" | tee ~/.xinitrc
