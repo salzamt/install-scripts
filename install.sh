@@ -563,6 +563,9 @@ sudo apt install vim-youcompletem
 vam install youcompleteme
 vam status
 
+# or after PlugInstall maybe just
+/home/riccardo/.vim/plugged/YouCompleteMe && python3 install.py --clangd-completer
+
 # gcloud installation
 gcloud beta compute ssh "mt-staging-develop-app" --tunnel-through-iap --project "meisterlabs-staging"
 sudo apt-get install apt-transport-https ca-certificates gnupg
