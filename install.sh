@@ -641,3 +641,8 @@ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-b
 chezmoi init --apply https://github.com/salzamt/chezmoi
 
 git config --global core.excludesfile ~/Documents/gitignore
+
+
+# install font
+sudo add-apt-repository ppa:fontforge/fontforge
+sudo apt install fonts-fantasque-sans
