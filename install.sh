@@ -365,9 +365,12 @@ sudo apt install python-pip python3-dev libjpeg-dev gir1.2-gexiv2-0.10 \
   jpeginfo python3-pip
 
 # image duplicate finder
-#https://github.com/jesjimher/imgdupes
-sudo pip3 install paramiko
-sudo apt install  libturbojpeg0-dev; sudo pip3 install jpegdupes
+# https://github.com/jesjimher/imgdupes
+# old way
+# sudo apt install  libturbojpeg0-dev; sudo pip3 install jpegdupes
+# new way, maybe with venv if needed?
+sudo apt-get install python3-dev libjpeg-dev gir1.2-gexiv2-0.10 jpeginfo python3-cffi libturbojpeg0-dev python3-gi
+sudo pip install jpegdupes
 
 ###############################################################################
 ######################### android #############################################
@@ -646,3 +649,5 @@ git config --global core.excludesfile ~/Documents/gitignore
 # install font
 sudo add-apt-repository ppa:fontforge/fontforge
 sudo apt install fonts-fantasque-sans
+
+
