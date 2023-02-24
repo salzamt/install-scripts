@@ -1,0 +1,15 @@
+# source: https://bbs.archlinux.org/viewtopic.php?pid=1170536#p1170536 by 65kid
+# /etc/systemd/system/i3lock.service; sudo systemctl ebable i3lock.service
+
+[Unit]
+Description=i3lock
+Before=sleep.target
+
+[Service]
+User=riccardo
+Type=forking
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/i3lock -i /home/riccardo/Pictures/lockscreen.png
+
+[Install]
+WantedBy=sleep.target
