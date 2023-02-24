@@ -7,6 +7,7 @@
     i3blocks_battery = "#"
     i3blocks_gputemp = ""
     i3blocks_cputemp_command = "/usr/share/i3blocks/temperature --chip coretemp-isa-0000 -c 90 -w 85"
+    i3blocks_wifi = '#'
 
 # tuxedo
 [data]
@@ -14,4 +15,4 @@
     i3blocks_battery = ""
     i3blocks_gputemp = "#"
     i3blocks_cputemp_command = "/usr/share/i3blocks/temperature | head -n 1"
-
+    i3blocks_wifi = ''
