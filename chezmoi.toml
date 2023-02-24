@@ -3,4 +3,5 @@
 [data]
     font_size = 10
     i3blocks_battery = "#"
+    i3blocks_gputemp = "#"
 
