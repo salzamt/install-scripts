@@ -70,6 +70,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   pcmanfm lxappearance
   figlet # FIGlet - display large characters made up of ordinary screen characters
   age # age encryption for chezmoi
+  imagemagick # for mogrify and stuff
   
 # set default editor to vim
 sudo update-alternatives --set editor /usr/bin/vim.basic
