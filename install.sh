@@ -69,6 +69,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   ncdu # interactive disk utilization utility
   pcmanfm lxappearance
   figlet # FIGlet - display large characters made up of ordinary screen characters
+  age # age encryption for chezmoi
   
 # set default editor to vim
 sudo update-alternatives --set editor /usr/bin/vim.basic
