@@ -251,5 +251,5 @@ jq as in
 
 # CAD / 3d printing
 freecad / librecad
-slic3r
+Prusa Slicer
 octoprint
