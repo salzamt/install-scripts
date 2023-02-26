@@ -69,7 +69,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   ncdu # interactive disk utilization utility
   pcmanfm lxappearance
   figlet # FIGlet - display large characters made up of ordinary screen characters
-  age # age encryption for chezmoi
+  age # age encryption for chezmoi (or on ubuntu https://lindevs.com/install-age-command-for-encrypting-files-on-ubuntu )
   imagemagick # for mogrify and stuff
   
 # set default editor to vim
