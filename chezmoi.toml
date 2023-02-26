@@ -1,6 +1,10 @@
 # ~/.config/chezmoi/chezmoi.toml
 # chmod 0600
 
+[age]
+    identity = "~/age_key.txt"
+    recipient = "age1ezecgcwg7r2upqn6nfctzl5ld03cta50tm4r6pjjufay98jg2aqsc0d9pc"
+
 # dell
 [data]
     font_size = 10
