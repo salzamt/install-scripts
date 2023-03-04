@@ -1,4 +1,5 @@
 # Tooling
+
 ## window manager
 i3 with i3blocks / redshift
 rofi, https://github.com/davatorium/rofi
@@ -107,52 +108,22 @@ zsh with oh-my-zsh
 alacritty
 
 ## Development
-pycharm-professional, vim, docker-ce, docker-compose
-VIM https://github.com/rapphil/vim-python-ide.git
+neovim
 
 ## password, identities and certificate manager
 1Passowrd for Firefox and as native client (https://support.1password.com/command-line-getting-started/)
 
 ## email
-geary / thunderbird
+thunderbird
 
 ## messaging
-Signal Native, Chatgrape, whatsapp (whatsdesk)
+Signal, whatsapp (whatsdesk)
 
 ## HTTP Client
 Insomnia
 
 ## display ordering
 xrandr (cli) and arandr (gui)
-
-## benchmark for finding a working nvidia driver...
-glmark2
-
-## hardware info summary
-hardinfo
-
-## games
-steam and 0AD (strategy game)
-### 0ad config for high dpi screens
-orig values:
-https://trac.wildfiregames.com/browser/ps/trunk/binaries/data/config/default.cfg
-overwrite 
-`gui.scale = 2.0` in `~.config/0ad/config/user.cfg`
-
-
-
-## volume format support
-hfs, exfat
-
-### mounting hfs volumes
-`sudo mount -t hfsplus -o force,rw /dev/sdXY /media/mntpoint`
-or
-`sudo mount -t hfsplus -o remount,force,rw /mount/point`
-### repair corrupted hfs partitions
-`sudo fsck.hfsplus -f /dev/sdXY`
-
-
-# Config hints
 
 ## media player key bindings
 playerctl (https://github.com/acrisci/playerctl/releases)
@@ -236,7 +207,6 @@ turtl notes app https://turtlapp.com/
 # dotfiles management
 chezmoi
 https://www.chezmoi.io/docs/quick-start/
-
 
 # logitech receivers
 https://github.com/pwr-Solaar/Solaar
