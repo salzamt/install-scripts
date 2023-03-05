@@ -39,7 +39,6 @@ echo "exec i3" | tee ~/.xinitrc
 # cycle last windows https://github.com/olivierlemoal/i3-swap-focus
 pip install --upgrade i3-swap-focus
 
-
 # cli connection manager
 sudo apt install connman rfkill
 sudo gpasswd -a <username> netdev
@@ -54,7 +53,6 @@ sudo apt update
 # select fastest package mirror before we start installing all that stuff
 sudo apt install netselect-apt && sudo netselect-apt && sudo apt update
 sudo apt upgrade
-
 
 # install draw.io desktop
 https://github.com/jgraph/drawio-desktop/releases/latest
