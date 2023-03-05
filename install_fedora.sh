@@ -59,7 +59,8 @@ sudo dnf -y install \
     lm_sensors \ # hardware monitoring for temp
     hddtemp \ # hardware monitoring for temp
     powertop \ # power consumption monitor
-    zsh \ 
+    zsh  
+
     \ # check if if xserver!
     deepin-screenshot \ # screenshot tool 
     ImageMagick \ # image manipulation (WARNING: X server)
