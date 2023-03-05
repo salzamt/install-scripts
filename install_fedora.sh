@@ -28,6 +28,10 @@ flatpak install com.github.eneshecan.WhatsAppForLinux com.valvesoftware.Steam co
 sudo ln -s /var/lib/snapd/snap /snap
 sudo snap install chezmoi --classic
 
+# select proper rofi theme
+launch: rofi
+launch: rofi-theme-selector # select gruvbox-dark
+
 # proper shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 chsh -s $(which zsh)
