@@ -111,6 +111,12 @@ sudo apt install \
   solaar # logitech receiver config playonlinux freecad
 
 
+# install i3blocks-contrib scripts
+cd ~/Downloads
+wget https://github.com/Anachron/i3blocks/archive/refs/heads/master.zip
+unzip i3blocks-master.zip
+sudo mv i3blocks-master/blocks /usr/share/i3blocks
+
 # install proper CLI network manager
 sudo apt purge network-manager && sudo apt install connman
 
