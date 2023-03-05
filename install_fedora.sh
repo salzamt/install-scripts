@@ -10,7 +10,7 @@ sudo dnf check-update
 sudo dnf up
 
 # install basic stuff
-sudo dnf -y install age vips alacritty blueman ca-certificates dnf-plugins-core curl gnupg2 dnf-plugin-system-upgrade feh figlet flatpak fzf git hstr htop i-nex megatools playerctl iftop mtr mtr-gtk ncdu neovim nmap openvpn pwgen python3-pip ranger polkit-gnome rsync dunst radeontop snapd sway tcpdump timeshift telnet tmux unzip docker-compose tldr vim wget whois zip gpsbabel solaar lm_sensors hddtemp powertop zsh tuxedo-keyboard tuxedo-control-center
+sudo dnf -y install vips alacritty blueman ca-certificates dnf-plugins-core curl gnupg2 dnf-plugin-system-upgrade feh figlet flatpak fzf git hstr htop i-nex megatools playerctl iftop mtr mtr-gtk ncdu neovim nmap openvpn pwgen python3-pip ranger polkit-gnome rsync dunst radeontop snapd sway tcpdump timeshift telnet tmux unzip docker-compose tldr vim wget whois zip gpsbabel solaar lm_sensors hddtemp powertop zsh tuxedo-keyboard tuxedo-control-center the_silver_searcher
 
     \ # check if if xserver!
     deepin-screenshot \ # screenshot tool 
@@ -20,10 +20,16 @@ sudo dnf -y install age vips alacritty blueman ca-certificates dnf-plugins-core 
     redshift \ # red filter after sunset 
     gpick \ # color picker
 
-
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 flatpak install com.github.eneshecan.WhatsAppForLinux com.valvesoftware.Steam com.prusa3d.PrusaSlicer com.spotify.Client com.valvesoftware.Steam org.gnome.Shotwell org.gnome.gThumb nz.mega.MEGAsync org.audacityteam.Audacity org.blender.Blender org.darktable.Darktable org.freecadweb.FreeCAD org.gimp.GIMP org.kde.kdenlive org.mozilla.Thunderbird org.signal.Signal org.videolan.VLC org.viking.Viking org.wireshark.Wireshark flathub com.slack.Slack
+
+# proper shell
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# setup vim
+cd ~/workspace/install-scripts
+bash install_vim.sh
 
 # sentoup temp sensors
 sudo sensors-detect && sensors
@@ -38,7 +44,7 @@ sudo systemctl start docker
 sudo groupadd docker
 sudo usermod -aG docker $(whoami)
 
-# configs
+# chezmoi
 # roll out known keys for gh
 rsync -avz riccardo@192.168.1.199:/home/riccardo/.ssh/ ~/.ssh
 scp riccardo@192.168.1.199:/home/riccardo/age_key.txt ~/
@@ -47,19 +53,16 @@ ssh-add ~/.ssh/id_ed25519
 ssh-add ~/.ssh/google_compute_engine
 ssh-add ~/.ssh/id_rsa
 
-# config for chezmoi 
+# get template for chezmoi
 cd ~
-mkdir workspace
-cd workspace
-git clone git clone git@github.com:salzamt/install-scripts.git
-cd install-scripts
-cp chezmoi.toml ~/.config/chezmoi/chezmoi.toml
+mkdir -p workspace
+git clone git@github.com:salzamt/install-scripts.git
+cp install-scripts/chezmoi.toml ~/.config/chezmoi/chezmoi.toml
 
-# install chezmoi
 sh -c "$(curl -fsLS get.chezmoi.io)"
 chezmoi init --apply git@github.com:salzamt/chezmoi.git
 
-# link tmux config
+# link tmux config # TODO: tmux finally migrated to .config! fix it
 ln -s ~/.config/tmux/.tmux.conf ~/.tmux.conf
 
 # google cloud stuff
