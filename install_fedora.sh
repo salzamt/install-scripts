@@ -10,18 +10,9 @@ sudo dnf check-update
 sudo dnf up
 
 # install basic stuff
-sudo dnf -y install vips alacritty blueman ca-certificates dnf-plugins-core curl gnupg2 dnf-plugin-system-upgrade feh figlet flatpak fzf git hstr htop i-nex megatools playerctl iftop mtr mtr-gtk ncdu neovim nmap openvpn pwgen python3-pip ranger polkit-gnome rsync dunst radeontop snapd sway tcpdump timeshift telnet tmux unzip docker-compose tldr vim wget whois zip gpsbabel solaar lm_sensors hddtemp powertop zsh tuxedo-keyboard tuxedo-control-center the_silver_searcher i3status i3blocks rofi i3
-
-    \ # check if if xserver!
-    deepin-screenshot \ # screenshot tool 
-    ImageMagick \ # image manipulation (WARNING: X server)
-    scrot \ # cli screen recorder
-    gtk-recordmydesktop \ # GUI screen recorder
-    redshift \ # red filter after sunset 
-    gpick \ # color picker
+sudo dnf -y install vips alacritty blueman ca-certificates dnf-plugins-core curl gnupg2 dnf-plugin-system-upgrade feh figlet flatpak fzf git hstr htop i-nex megatools playerctl iftop mtr mtr-gtk ncdu neovim nmap openvpn pwgen python3-pip ranger polkit-gnome rsync dunst radeontop snapd sway tcpdump timeshift telnet tmux unzip docker-compose tldr vim wget whois zip gpsbabel solaar lm_sensors hddtemp powertop zsh tuxedo-keyboard tuxedo-control-center the_silver_searcher i3status i3blocks rofi i3 deepin-screenshot ImageMagick scrot redshift gpick
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
 flatpak install com.github.eneshecan.WhatsAppForLinux com.valvesoftware.Steam com.prusa3d.PrusaSlicer com.spotify.Client com.valvesoftware.Steam org.gnome.Shotwell org.gnome.gThumb nz.mega.MEGAsync org.audacityteam.Audacity org.blender.Blender org.darktable.Darktable org.gimp.GIMP org.kde.kdenlive org.mozilla.Thunderbird org.signal.Signal org.videolan.VLC org.viking.Viking org.wireshark.Wireshark com.slack.Slack com.obsproject.Studio io.github.seadve.Kooha
 
 # ability to install classic snaps
