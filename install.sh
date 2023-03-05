@@ -101,7 +101,7 @@ chsh -s $(which zsh)
 # geany: text editor
 # testdisk: for photorec (deleted / lost file recovery)
 sudo apt install \
-  wireshark deepin-screenshot  geany gnome-screenshot scrot redshift-gtk \
+  wireshark deepin-screenshot  gnome-screenshot scrot redshift-gtk \
   gtk-recordmydesktop blueman gthumb openvpn xautolock \
   gpick exfat-fuse exfat-utils hfsprogs steam geary thunderbird testdisk blender \
   qlandkartegt texlive ranger-fm projectm-pulseaudio krita nfs-kernel-server \
@@ -241,7 +241,6 @@ echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" |  sudo tee -a /etc/apt
 wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-key add -
 sudo apt update && sudo apt install insomnia
 
-
 # install tldr man page excerpt
 sudo npm install -g tldr
 
@@ -357,7 +356,6 @@ git clone https://github.com/rapphil/vim-python-ide.git && cd vim-python-ide && 
 ###############################################################################
 sudo apt install lm-sensors hddtemp powertop psensor && sudo sensors-detect && sensors
 
-
 ###############################################################################
 ####################### Image Manipulation ####################################
 ###############################################################################
@@ -440,22 +438,10 @@ droidcam
 # droidcam
 
 
-# i3 alternating spiral layout
-# alternating layout for i3
-cd ~/workspace
-git clone https://github.com/olemartinorg/i3-alternating-layout
-pip install i3-py
-# OR/AND (for Python 2.x)
-# pip2 install i3-py
-# in i3 conf: exec --no-startup-id python3 /path/to/alternating_layouts.py
-
 # playerctl for adding hotkeys and i3wm interaction of i3blocks with media players
 cd ~/Downloads
 wget https://github.com/acrisci/playerctl/releases/download/v2.0.1/playerctl-2.0.1_amd64.deb
 sudo dpkg -i playerctl-2.0.1_amd64.deb
-
-# i3 configured wallpaper
-wget https://wallpapercave.com/wp/y3MGd53.jpg ~/Pictures/wallpaper.jpg
 
 # install dunst notifications (ubuntu)
 sudo apt install dunst
@@ -516,29 +502,20 @@ make -j 14
 sudo make altinstall
 python3.8 --version
 
-
-
-
 # configure your keyboard to your needs:
 `sudo dpkg-reconfigure keyboard-configuration`
 # left logo key for temporary layout switch, right one for permanent
-
-
-
+#
 # for chatgrape
 sudo apt-get install libxml2-dev libxmlsec1-dev libxmlsec1-openssl
 
-
 # radeontop
 sudo apt install radeontop
-
 
 # brightness control:
 sudo apt install light
 sudo usermod -a -G video riccardo
 sudo chmod +s /usr/bin/light
-
-
 
 # set dark theme
 ls -d /usr/share/themes/* |xargs -L
@@ -546,13 +523,8 @@ gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 # zoom for pdf reader
 gsettings set org.gnome.Evince page-cache-size 2000
 
-
-
-
 # ruby stuff
 sudo gem install rubocop
-
-
 
 # neo vim via app image
 # bin from https://github.com/neovim/neovim/releases/tag/v0.5.1
@@ -560,7 +532,6 @@ chmod u+x nvim.appimage && ./nvim.appimage
 
 # 3d stuff
 sudo apt install slic3r freecad librecad
-
 
 # vim for ruby / rails 
 sudo apt install vim-youcompletem
@@ -645,7 +616,6 @@ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-b
 chezmoi init --apply https://github.com/salzamt/chezmoi
 
 git config --global core.excludesfile ~/Documents/gitignore
-
 
 # install font
 sudo add-apt-repository ppa:fontforge/fontforge
