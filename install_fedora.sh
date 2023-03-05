@@ -24,6 +24,10 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 flatpak install com.github.eneshecan.WhatsAppForLinux com.valvesoftware.Steam com.prusa3d.PrusaSlicer com.spotify.Client com.valvesoftware.Steam org.gnome.Shotwell org.gnome.gThumb nz.mega.MEGAsync org.audacityteam.Audacity org.blender.Blender org.darktable.Darktable org.freecadweb.FreeCAD org.gimp.GIMP org.kde.kdenlive org.mozilla.Thunderbird org.signal.Signal org.videolan.VLC org.viking.Viking org.wireshark.Wireshark flathub com.slack.Slack
 
+# ability to install classic snaps
+sudo ln -s /var/lib/snapd/snap /snap
+sudo snap install chezmoi --classic
+
 # proper shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -58,8 +62,6 @@ cd ~
 mkdir -p workspace
 git clone git@github.com:salzamt/install-scripts.git
 cp install-scripts/chezmoi.toml ~/.config/chezmoi/chezmoi.toml
-
-sh -c "$(curl -fsLS get.chezmoi.io)"
 chezmoi init --apply git@github.com:salzamt/chezmoi.git
 
 # link tmux config # TODO: tmux finally migrated to .config! fix it
@@ -89,7 +91,7 @@ screenshots
 redshift
 rofi, especially focus window from search
 pet: snippet manager
-checkin redshift config to chezmoi
+checkin redshift config to 
 texlive? any latex editor? maybe vim...?
 chezmoi!
 jpegdupes
