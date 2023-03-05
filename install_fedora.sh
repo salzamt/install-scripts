@@ -10,7 +10,7 @@ sudo dnf check-update
 sudo dnf up
 
 # install basic stuff
-sudo dnf -y install vips alacritty blueman ca-certificates dnf-plugins-core curl gnupg2 dnf-plugin-system-upgrade feh figlet flatpak fzf git hstr htop i-nex megatools playerctl iftop mtr mtr-gtk ncdu neovim nmap openvpn pwgen python3-pip ranger polkit-gnome rsync dunst radeontop snapd sway tcpdump timeshift telnet tmux unzip docker-compose tldr vim wget whois zip gpsbabel solaar lm_sensors hddtemp powertop zsh tuxedo-keyboard tuxedo-control-center
+sudo dnf -y install age vips alacritty blueman ca-certificates dnf-plugins-core curl gnupg2 dnf-plugin-system-upgrade feh figlet flatpak fzf git hstr htop i-nex megatools playerctl iftop mtr mtr-gtk ncdu neovim nmap openvpn pwgen python3-pip ranger polkit-gnome rsync dunst radeontop snapd sway tcpdump timeshift telnet tmux unzip docker-compose tldr vim wget whois zip gpsbabel solaar lm_sensors hddtemp powertop zsh tuxedo-keyboard tuxedo-control-center
 
     \ # check if if xserver!
     deepin-screenshot \ # screenshot tool 
@@ -38,16 +38,26 @@ sudo systemctl start docker
 sudo groupadd docker
 sudo usermod -aG docker $(whoami)
 
-# chezmoi
+# configs
 # roll out known keys for gh
 rsync -avz riccardo@192.168.1.199:/home/riccardo/.ssh/ ~/.ssh
+scp riccardo@192.168.1.199:/home/riccardo/age_key.txt ~/
 eval `ssh-agent -s`
 ssh-add ~/.ssh/id_ed25519
 ssh-add ~/.ssh/google_compute_engine
 ssh-add ~/.ssh/id_rsa
 
+# config for chezmoi 
+cd ~
+mkdir workspace
+cd workspace
+git clone git clone git@github.com:salzamt/install-scripts.git
+cd install-scripts
+cp chezmoi.toml ~/.config/chezmoi/chezmoi.toml
+
+# install chezmoi
 sh -c "$(curl -fsLS get.chezmoi.io)"
-chezmoi init --apply https://github.com/salzamt/chezmoi
+chezmoi init --apply git@github.com:salzamt/chezmoi.git
 
 # link tmux config
 ln -s ~/.config/tmux/.tmux.conf ~/.tmux.conf
