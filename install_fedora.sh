@@ -8,58 +8,58 @@ sudo dnf up
 
 # install basic stuff
 sudo dnf -y install \
-    vips \ 
-    alacritty \ 
-    blueman \ 
-    ca-certificates \ 
-    dnf-plugins-core \ 
-    curl \
-    gnupg2 \ 
-    dnf-plugin-system-upgrade \ 
-    feh \ 
-    figlet \ 
-    flatpak \ 
-    fzf \ 
-    git \ 
-    hstr \ 
-    htop \ 
-    i-nex \ 
-    megatools \ 
-    playerctl \ 
-    iftop \ 
-    mtr \ 
-    mtr-gtk \ 
-    ncdo \ 
-    neovim \ 
-    nmap \ 
-    openvpn \ 
-    pwgen \ 
-    python3-pip \ 
-    ranger \
-    polkit-gnome \ 
-    rsync \
-    dunst \ 
-    radeontop \ 
-    snapd \ 
-    sway \ 
-    tcpdump \ 
-    timeshift \ 
-    telnet \
-    tmux \ 
-    unzip \ 
-    docker-comose \ 
-    tldr \ 
-    vim \ 
-    wget \
-    whois \ 
-    zip \ 
-    qlandkartegt \ 
-    gpsbabel \ 
-    solaar \ 
-    lm_sensors \ 
-    hddtemp \ 
-    powertop \ 
-    zsh  
+vips \ 
+alacritty \ 
+blueman \ 
+ca-certificates \ 
+dnf-plugins-core \ 
+curl \
+gnupg2 \ 
+dnf-plugin-system-upgrade \ 
+feh \ 
+figlet \ 
+flatpak \ 
+fzf \ 
+git \ 
+hstr \ 
+htop \ 
+i-nex \ 
+megatools \ 
+playerctl \ 
+iftop \ 
+mtr \ 
+mtr-gtk \ 
+ncdo \ 
+neovim \ 
+nmap \ 
+openvpn \ 
+pwgen \ 
+python3-pip \ 
+ranger \
+polkit-gnome \ 
+rsync \
+dunst \ 
+radeontop \ 
+snapd \ 
+sway \ 
+tcpdump \ 
+timeshift \ 
+telnet \
+tmux \ 
+unzip \ 
+docker-comose \ 
+tldr \ 
+vim \ 
+wget \
+whois \ 
+zip \ 
+qlandkartegt \ 
+gpsbabel \ 
+solaar \ 
+lm_sensors \ 
+hddtemp \ 
+powertop \ 
+zsh  
 
     \ # check if if xserver!
     deepin-screenshot \ # screenshot tool 
