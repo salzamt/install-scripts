@@ -17,29 +17,7 @@ sudo dnf -y install vips alacritty blueman ca-certificates dnf-plugins-core curl
     redshift \ # red filter after sunset 
     gpick \ # color picker
 
-
-
-flatpak install \
-    com.github.eneshecan.WhatsAppForLinux \ 
-    com.valvesoftware.Steam \
-    flathub com.prusa3d.PrusaSlicer \
-    flathub com.spotify.Client \
-    flathub com.valvesoftware.Steam \
-    flathub org.gnome.Shotwell \ # photo organizer 
-    flathub org.gnome.gThumb \ # image viewer, editor, organizer
-    nz.mega.MEGAsync \ 
-    org.audacityteam.Audacity \ 
-    org.blender.Blender \
-    org.darktable.Darktable \
-    org.freecadweb.FreeCAD \
-    org.gimp.GIMP \
-    org.kde.kdenlive \
-    org.mozilla.Thunderbird \
-    org.signal.Signal \
-    org.videolan.VLC \
-    org.viking.Viking \ 
-    org.wireshark.Wireshark \
-    flathub com.slack.Slack
+flatpak install com.github.eneshecan.WhatsAppForLinux com.valvesoftware.Steam com.prusa3d.PrusaSlicer com.spotify.Client com.valvesoftware.Steam org.gnome.Shotwell org.gnome.gThumb nz.mega.MEGAsync org.audacityteam.Audacity org.blender.Blender org.darktable.Darktable org.freecadweb.FreeCAD org.gimp.GIMP org.kde.kdenlive org.mozilla.Thunderbird org.signal.Signal org.videolan.VLC org.viking.Viking org.wireshark.Wireshark flathub com.slack.Slack
 
 # sentoup temp sensors
 sudo sensors-detect && sensors
