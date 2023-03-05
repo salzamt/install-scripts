@@ -17,6 +17,9 @@ sudo dnf -y install vips alacritty blueman ca-certificates dnf-plugins-core curl
     redshift \ # red filter after sunset 
     gpick \ # color picker
 
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
 flatpak install com.github.eneshecan.WhatsAppForLinux com.valvesoftware.Steam com.prusa3d.PrusaSlicer com.spotify.Client com.valvesoftware.Steam org.gnome.Shotwell org.gnome.gThumb nz.mega.MEGAsync org.audacityteam.Audacity org.blender.Blender org.darktable.Darktable org.freecadweb.FreeCAD org.gimp.GIMP org.kde.kdenlive org.mozilla.Thunderbird org.signal.Signal org.videolan.VLC org.viking.Viking org.wireshark.Wireshark flathub com.slack.Slack
 
 # sentoup temp sensors
