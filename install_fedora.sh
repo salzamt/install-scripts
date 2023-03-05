@@ -39,7 +39,14 @@ sudo groupadd docker
 sudo usermod -aG docker $(whoami)
 
 # chezmoi
-asdf plugin add chezmoi && asdf install chezmoi 2.31.1
+# roll out known keys for gh
+rsync -avz riccardo@192.168.1.199:/home/riccardo/.ssh/ ~/.ssh
+eval `ssh-agent -s`
+ssh-add ~/.ssh/id_ed25519
+ssh-add ~/.ssh/google_compute_engine
+ssh-add ~/.ssh/id_rsa
+
+sh -c "$(curl -fsLS get.chezmoi.io)"
 chezmoi init --apply https://github.com/salzamt/chezmoi
 
 # link tmux config
