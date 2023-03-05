@@ -10,7 +10,7 @@ sudo dnf check-update
 sudo dnf up
 
 # install basic stuff
-sudo dnf -y install vips alacritty blueman ca-certificates dnf-plugins-core curl gnupg2 dnf-plugin-system-upgrade feh figlet flatpak fzf git hstr htop i-nex megatools playerctl iftop mtr mtr-gtk ncdu neovim nmap openvpn pwgen python3-pip ranger polkit-gnome rsync dunst radeontop snapd sway tcpdump timeshift telnet tmux unzip docker-compose tldr vim wget whois zip gpsbabel solaar lm_sensors hddtemp powertop zsh tuxedo-keyboard tuxedo-control-center the_silver_searcher i3status i3blocks rofi i3 deepin-screenshot ImageMagick scrot redshift gpick
+sudo dnf -y install vips alacritty blueman ca-certificates dnf-plugins-core curl gnupg2 dnf-plugin-system-upgrade feh figlet flatpak fzf git hstr htop i-nex megatools playerctl iftop mtr mtr-gtk ncdu neovim nmap openvpn pwgen python3-pip ranger polkit-gnome rsync dunst radeontop snapd sway tcpdump timeshift telnet tmux unzip docker-compose tldr vim wget whois zip gpsbabel solaar lm_sensors hddtemp powertop zsh tuxedo-keyboard tuxedo-control-center the_silver_searcher i3status i3blocks rofi i3 deepin-screenshot ImageMagick scrot redshift gpick sysstat
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install com.github.eneshecan.WhatsAppForLinux com.valvesoftware.Steam com.prusa3d.PrusaSlicer com.spotify.Client com.valvesoftware.Steam org.gnome.Shotwell org.gnome.gThumb nz.mega.MEGAsync org.audacityteam.Audacity org.blender.Blender org.darktable.Darktable org.gimp.GIMP org.kde.kdenlive org.mozilla.Thunderbird org.signal.Signal org.videolan.VLC org.viking.Viking org.wireshark.Wireshark com.slack.Slack com.obsproject.Studio io.github.seadve.Kooha
@@ -22,6 +22,9 @@ sudo snap install chezmoi --classic
 # select proper rofi theme
 launch: rofi
 launch: rofi-theme-selector # select gruvbox-dark
+
+# install i3blocks-contrib scripts
+git clone git@github.com:vivien/i3blocks-contrib.git ~/workspace/
 
 # proper shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
