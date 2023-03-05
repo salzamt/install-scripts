@@ -8,57 +8,57 @@ sudo dnf up
 
 # install basic stuff
 sudo dnf -y install \
-    vips \ # more modern imagemagick
-    alacritty \ # GPU accelerated terminal
-    blueman \ # GTK+ Bluetooth Manager
-    ca-certificates \ # mozilla CA root cert bundle
-    dnf-plugins-core \ # for installing docker then
+    vips \ 
+    alacritty \ 
+    blueman \ 
+    ca-certificates \ 
+    dnf-plugins-core \ 
     curl \
-    gnupg2 \ # utility for secure communication and data storage
-    dnf-plugin-system-upgrade \ # upgrade-system-upgrade
-    feh \ # command line image viewer and desktop background setter
-    figlet \ # making large letters out of ordinary text
+    gnupg2 \ 
+    dnf-plugin-system-upgrade \ 
+    feh \ 
+    figlet \ 
     flatpak \ 
-    fzf \ # cli fuzzy finder
+    fzf \ 
     git \ 
-    hstr \ # shell history search
+    hstr \ 
     htop \ 
-    i-nex \ # hardinfo for fedora
-    megatools \ # cli client for MEGA sync
-    playerctl \ # cli controller for MPRIS compatible media players
-    iftop \ # cli tool that displays bandwidth usage on an interface
-    mtr \ # network diagnostic tool combining traceroute and ping
-    mtr-gtk \ # GTK interforace for MTR
-    ncdo \ # disc utilization manager
-    neovim \ # configured as ide
-    nmap \ # network exploration 
+    i-nex \ 
+    megatools \ 
+    playerctl \ 
+    iftop \ 
+    mtr \ 
+    mtr-gtk \ 
+    ncdo \ 
+    neovim \ 
+    nmap \ 
     openvpn \ 
-    pwgen \ # password generator 
-    python3-pip \ # python is just needed..what else to sway.
+    pwgen \ 
+    python3-pip \ 
     ranger \
-    polkit-gnome \ # PolicyKit integration for the GNOME desktop for sudo pw prompts
+    polkit-gnome \ 
     rsync \
-    dunst \ # notifications
-    radeontop \ # radeon video card monitoring
+    dunst \ 
+    radeontop \ 
     snapd \ 
-    sway \ # i3 like compositor and WM for wayland
-    tcpdump \ # traffic monitoring
-    timeshift \ # backup tool compatible with btrfs and ext4 snapshotting
+    sway \ 
+    tcpdump \ 
+    timeshift \ 
     telnet \
     tmux \ 
     unzip \ 
     docker-comose \ 
-    tldr \ # man page excerpt
-    vim \ # as editor for big files, basic settings kept
+    tldr \ 
+    vim \ 
     wget \
-    whois \ # improved whois client
+    whois \ 
     zip \ 
-    qlandkartegt \ # GPS device mapping tool
-    gpsbabel \ # convert between various formats used by GPS devices
-    solaar \ # device manager for a wide range of Logitech devices
-    lm_sensors \ # hardware monitoring for temp
-    hddtemp \ # hardware monitoring for temp
-    powertop \ # power consumption monitor
+    qlandkartegt \ 
+    gpsbabel \ 
+    solaar \ 
+    lm_sensors \ 
+    hddtemp \ 
+    powertop \ 
     zsh  
 
     \ # check if if xserver!
