@@ -7,9 +7,8 @@ sudo dnf check-update
 sudo dnf up
 
 # install basic stuff
-sudo dnf install \
+sudo dnf -y install \
     vips \ # more modern imagemagick
-    age \ # encryption tool, used for f.e. chezmoi file encryption
     alacritty \ # GPU accelerated terminal
     blueman \ # GTK+ Bluetooth Manager
     ca-certificates \ # mozilla CA root cert bundle
