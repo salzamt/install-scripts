@@ -644,5 +644,8 @@ sudo apt update && sudo apt install 1password-cli
 
 # TODO convert to fedora
 # for vim (telescope plugin
-sudo apt install fd-find cargo
-cargo install ripgrep
+RIPGREP_VERSION=$(curl -s "https://api.github.com/repos/BurntSushi/ripgrep/releases/latest" | grep -Po '"tag_name": "\K[0-9.]+')
+curl -Lo ripgrep.deb "https://github.com/BurntSushi/ripgrep/releases/latest/download/ripgrep_${RIPGREP_VERSION}_amd64.deb"
+sudo apt install -y ./ripgrep.deb
+rg --version
+rm -rf ripgrep.deb
