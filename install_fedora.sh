@@ -99,3 +99,10 @@ idisable power button shutdown action - set to ignore.
 k9s
 linuxbrew
 google cloud via linuxbrew maybe? 
+
+
+
+# TODO convert to fedora
+# for vim (telescope plugin
+sudo apt install fd-find cargo
+cargo install ripgrep
