@@ -653,7 +653,7 @@ rm -rf ripgrep.deb
 
 
 # ranger
-sudo apt install ranger
+sudo apt remove ranger; sudo -H pip3 install ranger-fm ueberzug
 cd workspace
 g clone git@github.com:mwh/dragon.git
 cd dragon
