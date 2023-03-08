@@ -649,3 +649,14 @@ curl -Lo ripgrep.deb "https://github.com/BurntSushi/ripgrep/releases/latest/down
 sudo apt install -y ./ripgrep.deb
 rg --version
 rm -rf ripgrep.deb
+
+
+
+# ranger
+sudo apt install ranger
+cd workspace
+g clone git@github.com:mwh/dragon.git
+cd dragon
+sudo apt-get install libgtk-3-dev
+make
+make install
