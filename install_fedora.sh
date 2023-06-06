@@ -17,7 +17,7 @@ flatpak install com.github.eneshecan.WhatsAppForLinux com.valvesoftware.Steam co
 
 # set theme
 flatpak install org.gtk.Gtk3theme.Adwaita-dark
-sudo flatpak override --filesystem=/usr/share/themes/\nflatpak override --env GTK_THEME=Adwaita-dark
+sudo flatpak override --filesystem=/usr/share/themes/
 sudo flatpak override --env GTK_THEME=Adwaita-dark
 
 # ability to install classic snaps
