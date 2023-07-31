@@ -28,7 +28,7 @@ apt update && apt install vim i3 xinit
 # add i3 to xorg init
 exec i3 >> ~/.xinitrc
 
-# check modifier config 
+# check modifier config
 Xmodmap
 # assign modifier keys, test which is which
 xev
@@ -70,11 +70,11 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   age # age encryption for chezmoi (or on ubuntu https://lindevs.com/install-age-command-for-encrypting-files-on-ubuntu )
   imagemagick # for mogrify and stuff
   silversearcher-ag # for vim fzf
-  
+
 # set default editor to vim
 sudo update-alternatives --set editor /usr/bin/vim.basic
 
- 
+
 # pet snippet manager
 cd ~/Downloads
 wget https://github.com/knqyf263/pet/releases/download/v0.3.0/pet_0.3.0_linux_amd64.deb
@@ -144,7 +144,22 @@ pip3 install fabric
 # python terminal color module (used for i3blocks custom blocks)
 pip install termcolor
 
-###############################################################################
+asdf plugin-add elixir # https://github.com/asdf-vm/asdf-elixir.git
+asdf plugin-add erlang
+asdf install erlang latest
+asdf install elixir latest
+
+cd Downloads
+wget "https://github.com/exercism/cli/releases/download/v3.1.0/exercism-3.1.0-linux-x86_64.tar.gz" # check for new version
+tar -xf exercism-linux-64bit.tgz
+tar -xf exercism-3.1.0-linux-x86_64.tar.gz
+ls
+mkdir -p ~/bin
+mv exercism ~/bin
+~/bin/exercism
+exercism
+
+##############################################################################
 ######################### alacritty GPU terminal ##############################
 ###############################################################################
 # ubuntu:
@@ -293,7 +308,7 @@ nordvpn whitelist add subnet 192.168.1.0/24
 # https://support.1password.com/command-line-getting-started/
 
 # cli client from https://app-updates.agilebits.com/product_history/CLI
-cd ~/Downloads 
+cd ~/Downloads
 wget "https://cache.agilebits.com/dist/1P/op/pkg/v0.10.0/op_linux_amd64_v0.10.0.zip"
 unzip op_linux_amd64_v0.10.0.zip
 sudo mv op /usr/local/bin
@@ -526,7 +541,7 @@ sudo chmod +s /usr/bin/light
 
 # set dark theme
 ls -d /usr/share/themes/* |xargs -L
-gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark' 
+gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 # zoom for pdf reader
 gsettings set org.gnome.Evince page-cache-size 2000
 
@@ -540,7 +555,7 @@ chmod u+x nvim.appimage && ./nvim.appimage
 # 3d stuff
 sudo apt install slic3r freecad librecad
 
-# vim for ruby / rails 
+# vim for ruby / rails
 sudo apt install vim-youcompletem
 vam install youcompleteme
 vam status
@@ -609,6 +624,15 @@ brew install derailed/k9s/k9s
 brew install helm
 brew install google-cloud-sdk
 
+
+# helm w/o brew
+curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
+sudo apt-get install apt-transport-https --yes
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
+sudo apt-get update
+sudo apt-get install helm
+
+
 gcloud components install kubectl # OR brew install kubectl
 
 # ruby environment
@@ -650,8 +674,6 @@ sudo apt install -y ./ripgrep.deb
 rg --version
 rm -rf ripgrep.deb
 
-
-
 # ranger
 sudo apt remove ranger; sudo -H pip3 install ranger-fm ueberzug
 cd workspace
@@ -660,3 +682,12 @@ cd dragon
 sudo apt-get install libgtk-3-dev
 make
 make install
+
+# install age on ubuntu
+# 10026  AGE_VERSION=$(curl -s "https://api.github.com/repos/FiloSottile/age/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
+cd Downloads
+curl -Lo age.tar.gz "https://github.com/FiloSottile/age/releases/latest/download/age-v${AGE_VERSION}-linux-amd64.tar.gz"
+tar xf age.tar.gz
+sudo mv age/age /usr/local/bin\nsudo mv age/age-keygen /usr/local/bin
+age -version
+rm -rf age.tar.gz\nrm -rf age
