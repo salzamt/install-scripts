@@ -687,7 +687,17 @@ make install
 # 10026  AGE_VERSION=$(curl -s "https://api.github.com/repos/FiloSottile/age/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
 cd Downloads
 curl -Lo age.tar.gz "https://github.com/FiloSottile/age/releases/latest/download/age-v${AGE_VERSION}-linux-amd64.tar.gz"
-tar xf age.tar.gz
-sudo mv age/age /usr/local/bin\nsudo mv age/age-keygen /usr/local/bin
-age -version
-rm -rf age.tar.gz\nrm -rf age
+
+# google auth login
+gcloud auth application-default login
+
+# sops client for authenticatoin
+cd Downloads
+wget https://github.com/getsops/sops/releases/download/v3.7.3/sops_3.7.3_amd64.deb
+sudo dpkg -i sops_3.7.3_amd64.deb
+
+#k9s
+cd Downloads
+wget "https://github.com/derailed/k9s/releases/download/v0.27.4/k9s_Linux_amd64.tar.gz"
+tar xzf k9s_Linux_amd64.tar.gz
+mv k9s /home/riccardo/.local/bin/
