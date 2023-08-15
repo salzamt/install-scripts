@@ -59,7 +59,7 @@ pinta
 
 ## photo editor
 gopro import: Shotwell
-phto organizer: gthumb
+phto organizer: gthumb (newer digiKam)
 drawing: krita
 image manipulation: inkscape gimp darktable
 color picking: gpicka
