@@ -701,3 +701,7 @@ cd Downloads
 wget "https://github.com/derailed/k9s/releases/download/v0.27.4/k9s_Linux_amd64.tar.gz"
 tar xzf k9s_Linux_amd64.tar.gz
 mv k9s /home/riccardo/.local/bin/
+
+
+# digikam
+flatpak install flathub org.kde.digikam
