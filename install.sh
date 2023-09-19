@@ -70,6 +70,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   age # age encryption for chezmoi (or on ubuntu https://lindevs.com/install-age-command-for-encrypting-files-on-ubuntu )
   imagemagick # for mogrify and stuff
   silversearcher-ag # for vim fzf
+  dialog # bash dialog for pomodoro
 
 # set default editor to vim
 sudo update-alternatives --set editor /usr/bin/vim.basic
