@@ -90,7 +90,7 @@ pip3 install pip-tools
 # free cad
 flatpak install flathub org.freecadweb.FreeCAD
 flatpak install flathub org.openscad.OpenSCAD
-
+flatpak install flathub com.sweethome3d.Sweethome3d
 
 pip install tools
 pip3 install tools
