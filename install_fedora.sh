@@ -17,7 +17,7 @@ flatpak install com.github.eneshecan.WhatsAppForLinux com.valvesoftware.Steam co
 
 flatpak install flathub org.freecadweb.FreeCAD
 flatpak install flathub org.openscad.OpenSCAD
-
+flatpak install flathub com.sweethome3d.Sweethome3d
 
 # set theme
 flatpak install org.gtk.Gtk3theme.Adwaita-dark
