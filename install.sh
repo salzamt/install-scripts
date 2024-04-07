@@ -72,6 +72,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   silversearcher-ag # for vim fzf
   dialog # bash dialog for pomodoro
   neofetch # for showing terminal os info on startup
+  wavemon # wifi singal monitoring 
 
 # set default editor to vim
 sudo update-alternatives --set editor /usr/bin/vim.basic
