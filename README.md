@@ -223,3 +223,8 @@ jq as in
 freecad / librecad
 Prusa Slicer
 octoprint
+
+# Fixing standby / suspend to ram
+sudo vim /etc/tmpfiles.d/no-pm-async.conf
+-----------------------------------------
+w /sys/power/pm_async - - - - 0
