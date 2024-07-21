@@ -712,3 +712,6 @@ mv k9s /home/riccardo/.local/bin/
 
 # digikam
 flatpak install flathub org.kde.digikam
+
+# speedtest
+curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash && sudo apt-get install speedtest
