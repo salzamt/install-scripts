@@ -74,6 +74,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   neofetch # for showing terminal os info on startup
   wavemon # wifi singal monitoring 
   powertop # power measuring
+  usbtop
   latexmk # executable for vimtex
 
 # set default editor to vim
