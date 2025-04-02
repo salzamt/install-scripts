@@ -61,7 +61,7 @@ https://github.com/jgraph/drawio-desktop/releases/latest
 sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   ttf-dejavu git x11-utils arandr feh zsh tmux vifm pwgen nmap tcpdump \
   tmux rsync zip unzip htop iftop iotop whois dnsutils telnet bridge-utils mtr mtr-tiny\
-  apt-transport-https ca-certificates yamllint htop pavucontrol gparted gpart stress kazam obs-studio flatpack \
+  apt-transport-https ca-certificates yamllint htop pavucontrol gparted gpart stress kazam flatpack \
   fzf # cli fuzzy finder
   hstr # for zsh history searcj
   ncdu # interactive disk utilization utility
@@ -77,6 +77,8 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   usbtop
   latexmk # executable for vimtex
   texlive-bibtex-extra biber # latex bib lib
+  obs-studio # recording presentations and streaming
+  zathura # pdf viewing for presentation  zathura --mode presentation main.pdf
 
 # set default editor to vim
 sudo update-alternatives --set editor /usr/bin/vim.basic
