@@ -705,3 +705,12 @@ flatpak install flathub org.kde.digikam
 
 # speedtest
 curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash && sudo apt-get install speedtest
+
+
+
+# fonts
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts
+wget https://github.com/google/fonts/raw/main/ofl/montserrat/Montserrat%5Bwght%5D.ttf -O Montserrat.ttf
+fc-cache -f -v
+
