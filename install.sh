@@ -257,7 +257,7 @@ sudo add-apt-repository ppa:wfg/0ad && apt install 0ad
 ###############################################################################
 ######################### media apps ##########################################
 ###############################################################################
-sudo apt install pitivi inkscape gimp darktable gnome-sushi
+sudo apt install pitivi darktable gnome-sushi
 
 ###############################################################################
 ######################### signal messenger ####################################
@@ -699,9 +699,9 @@ wget "https://github.com/derailed/k9s/releases/download/v0.27.4/k9s_Linux_amd64.
 tar xzf k9s_Linux_amd64.tar.gz
 mv k9s /home/riccardo/.local/bin/
 
-
-# digikam
 flatpak install flathub org.kde.digikam
+flatpak install inkscape
+flatpak install gimp
 
 # speedtest
 curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash && sudo apt-get install speedtest
