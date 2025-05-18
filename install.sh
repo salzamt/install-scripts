@@ -77,6 +77,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   usbtop
   latexmk # executable for vimtex
   texlive-bibtex-extra biber # latex bib lib
+  texlive-lang-german
   obs-studio # recording presentations and streaming
   zathura # pdf viewing for presentation  zathura --mode presentation main.pdf
   pandoc # PDF generator for vim
