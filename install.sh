@@ -16,6 +16,11 @@ sudo apt install qt5ct qt5-style-plugins
 echo "export QT_QPA_PLATFORMTHEME=qt5ct" >> ~/.bash_profile
 
 
+# tailwind css installer
+cd ~/Downloads
+curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-linux-x64\nchmod +x tailwindcss-linux-x64\nmv tailwindcss-linux-x64 tailwindcss
+sudo mv tailwindcss /usr/local/bin
+
 # a good fallback-terminal
 sudo apt install xfce4-terminal
 
