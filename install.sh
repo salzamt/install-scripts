@@ -90,6 +90,8 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
 # set default editor to vim
 sudo update-alternatives --set editor /usr/bin/vim.basic
 
+# pandoc md to pdf
+sudo apt install pandoc texlive texlive-xetex texlive-fonts-recommended texlive-latex-extra
 
 # pet snippet manager
 cd ~/Downloads
