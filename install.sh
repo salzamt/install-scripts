@@ -69,6 +69,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   apt-transport-https ca-certificates yamllint htop pavucontrol gparted gpart stress kazam flatpack \
   fzf # cli fuzzy finder
   hstr # for zsh history searcj
+  gettext # PO Files
   ncdu # interactive disk utilization utility
   pcmanfm lxappearance
   figlet # FIGlet - display large characters made up of ordinary screen characters
