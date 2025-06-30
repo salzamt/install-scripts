@@ -87,6 +87,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   obs-studio # recording presentations and streaming
   zathura # pdf viewing for presentation  zathura --mode presentation main.pdf
   pandoc # PDF generator for vim
+  heif-convert # concert command for heic files
 
 # set default editor to vim
 sudo update-alternatives --set editor /usr/bin/vim.basic
