@@ -89,7 +89,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   pandoc # PDF generator for vim
   heif-convert # concert command for heic files
   taskwarrior
-  anki # flashcards for learning / uni stuff
+  
 
 # set default editor to vim
 sudo update-alternatives --set editor /usr/bin/vim.basic
@@ -112,6 +112,8 @@ pip3 install pip-tools
 flatpak install flathub org.freecadweb.FreeCAD
 flatpak install flathub org.openscad.OpenSCAD
 flatpak install flathub com.sweethome3d.Sweethome3d
+flatpak install flathub com.sweethome3d.Sweethome3d
+flatpak install net.ankiweb.Anki # flashcard learning
 
 pip install tools
 pip3 install tools
