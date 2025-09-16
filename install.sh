@@ -89,6 +89,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   pandoc # PDF generator for vim
   heif-convert # concert command for heic files
   taskwarrior
+  anki # flashcards for learning / uni stuff
 
 # set default editor to vim
 sudo update-alternatives --set editor /usr/bin/vim.basic
