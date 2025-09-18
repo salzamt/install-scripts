@@ -89,6 +89,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   pandoc # PDF generator for vim
   heif-convert # concert command for heic files
   taskwarrior
+  pdfgrep # cli tool for reading and grepping in pdfs
   
 
 # set default editor to vim
