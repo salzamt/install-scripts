@@ -113,8 +113,10 @@ pip3 install pip-tools
 flatpak install flathub org.freecadweb.FreeCAD
 flatpak install flathub org.openscad.OpenSCAD
 flatpak install flathub com.sweethome3d.Sweethome3d
-flatpak install flathub com.sweethome3d.Sweethome3d
 flatpak install net.ankiweb.Anki # flashcard learning
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub com.nextcloud.desktopclient.nextcloud
 
 pip install tools
 pip3 install tools
