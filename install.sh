@@ -162,7 +162,7 @@ exit
 sudo apt install earlyoom
 
 # latex stuff (texlive and texmaker)
-sudo apt-get install texlive-full texmaker
+sudo apt-get install texlive-full texmaker texlive-fonts-extra
 
 sudo snap install spotify vlc audacity whatsdesk
 sudo snap install android-studio --classic
