@@ -92,7 +92,6 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   pdfgrep # cli tool for reading and grepping in pdfs
   cachefilesd # for mounting nfs with the fsc flag to cache locally
   fio # disk/nfs benchmarking like fio --name=read --rw=read --bs=1M --size=2G --directory=/media/salzstore --iodepth=8
-  
 
 # set default editor to vim
 sudo update-alternatives --set editor /usr/bin/vim.basic
@@ -403,7 +402,8 @@ sudo ln -s /opt/jetbrains/pycharm-2020.2/bin/pycharm.sh /usr/local/bin/Pycharm
 ###############################################################################
 sudo apt install libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev \
   libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev \
-  python-dev python3-dev python3-docutils gcc git ctags vim-gtk
+  python-dev python3-dev python3-docutils gcc git ctags vim-gtk python3-opencv \
+  python3-pip
 cd ~/workspace
 git clone https://github.com/rapphil/vim-python-ide.git && cd vim-python-ide && ./install.sh
 
