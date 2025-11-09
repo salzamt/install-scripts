@@ -119,6 +119,7 @@ flatpak install net.ankiweb.Anki # flashcard learning
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub com.nextcloud.desktopclient.nextcloud
 flatpak install fastmail
+flatpak install com.mastermindzh.tidal-hifi
 
 pip install tools
 pip3 install tools
