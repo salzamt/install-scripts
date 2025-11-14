@@ -92,6 +92,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   pdfgrep # cli tool for reading and grepping in pdfs
   cachefilesd # for mounting nfs with the fsc flag to cache locally
   fio # disk/nfs benchmarking like fio --name=read --rw=read --bs=1M --size=2G --directory=/media/salzstore --iodepth=8
+  guvcview # webcam tool
 
 # set default editor to vim
 sudo update-alternatives --set editor /usr/bin/vim.basic
