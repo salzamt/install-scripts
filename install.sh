@@ -95,7 +95,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   guvcview # webcam tool
 
 flatpak install flathub hu.irl.cameractrls # webcam tool
-
+flatpak install io.github.sxyazi.yazi # terminal file manager
 # set default editor to vim
 sudo update-alternatives --set editor /usr/bin/vim.basic
 
