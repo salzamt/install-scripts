@@ -93,6 +93,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   cachefilesd # for mounting nfs with the fsc flag to cache locally
   fio # disk/nfs benchmarking like fio --name=read --rw=read --bs=1M --size=2G --directory=/media/salzstore --iodepth=8
   guvcview # webcam tool
+  rsnapshot # backup
 
 flatpak install flathub hu.irl.cameractrls # webcam tool
 flatpak install io.github.sxyazi.yazi # terminal file manager
