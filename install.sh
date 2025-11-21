@@ -315,14 +315,7 @@ sudo npm install -g tldr
 ######################### nordvpn #####@#######################################
 ###############################################################################
 # nordvpn if you have an account
-cd ~/Downloads
-wget https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
-sudo dpkg -i nordvpn-release_1.0.0_all.deb
-sudo apt update
-sudo apt install nordvpn
-nordvpn login
-nordvpn set technology nordlynx
-nordvpn c
+sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 
 # nordlynx wireguard
 # sudo add-apt-repository ppa:wireguard/wireguard
