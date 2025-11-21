@@ -30,6 +30,9 @@ sudo apt install xfce4-terminal
 # add the necessary bullseye sources to /etc/apt/sources.list
 apt update && apt install vim i3 xinit
 
+# root pw prompt polkit
+sudo apt install mate-polkit-bin
+
 # add i3 to xorg init
 exec i3 >> ~/.xinitrc
 
