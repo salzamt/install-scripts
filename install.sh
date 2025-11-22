@@ -99,7 +99,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   rsnapshot # backup
 
 flatpak install flathub hu.irl.cameractrls # webcam tool
-flatpak install io.github.sxyazi.yazi # terminal file manager
+
 # set default editor to vim
 sudo update-alternatives --set editor /usr/bin/vim.basic
 
@@ -732,11 +732,14 @@ flatpak install gimp
 # speedtest
 curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash && sudo apt-get install speedtest
 
-
-
 # fonts
 mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts
 wget https://github.com/google/fonts/raw/main/ofl/montserrat/Montserrat%5Bwght%5D.ttf -O Montserrat.ttf
 fc-cache -f -v
+
+# File browser
+sudo apt install thunar
+xdg-mime default thunar.desktop inode/directory\nxdg-mime default thunar.desktop x-directory/normal\nxdg-mime default thunar.desktop application/x-gnome-saved-search\n
+gio mime inode/directory thunar.desktop
 
