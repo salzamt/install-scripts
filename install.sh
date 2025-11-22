@@ -97,6 +97,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   fio # disk/nfs benchmarking like fio --name=read --rw=read --bs=1M --size=2G --directory=/media/salzstore --iodepth=8
   guvcview # webcam tool
   rsnapshot # backup
+  btop # more intense htop
 
 flatpak install flathub hu.irl.cameractrls # webcam tool
 
