@@ -743,4 +743,11 @@ fc-cache -f -v
 sudo apt install thunar
 xdg-mime default thunar.desktop inode/directory\nxdg-mime default thunar.desktop x-directory/normal\nxdg-mime default thunar.desktop application/x-gnome-saved-search\n
 gio mime inode/directory thunar.desktop
+xdg-mime default thunar.desktop inode/directory
+xdg-mime default thunar.desktop application/x-gnome-saved-search
+# test
+xdg-mime query default inode/directory
+xdg-open .
+
+
 
