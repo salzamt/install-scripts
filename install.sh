@@ -146,7 +146,7 @@ chsh -s $(which zsh)
 # geany: text editor
 # testdisk: for photorec (deleted / lost file recovery)
 sudo apt install \
-  wireshark deepin-screenshot  gnome-screenshot scrot redshift-gtk \
+  wireshark scrot redshift-gtk \
   gtk-recordmydesktop blueman gthumb openvpn xautolock \
   gpick exfat-fuse exfat-utils hfsprogs steam geary thunderbird testdisk blender \
   qlandkartegt texlive ranger-fm projectm-pulseaudio krita nfs-kernel-server \
@@ -154,6 +154,7 @@ sudo apt install \
   lsp-plugins pulseeffects # equalizer
   solaar # logitech receiver config playonlinux freecad
 
+flatpak install com.github.vkohaupt.vokoscreenNG
 
 # install i3blocks-contrib scripts
 cd ~/Downloads
