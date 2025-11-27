@@ -176,13 +176,15 @@ sudo apt install earlyoom
 # latex stuff (texlive and texmaker)
 sudo apt-get install texlive-full texmaker texlive-fonts-extra
 
-sudo snap install spotify vlc audacity whatsdesk
+sudo snap install spotify audacity whatsdesk
 sudo snap install android-studio --classic
 sudo snap install openboardview # for reading brd files of circuit boards
 
 # enable earlyOOM killer (https://github.com/rfjakob/earlyoom)
 sudo systemctl enable earlyoom
 sudo systemctl start earlyoom
+
+flatpak install org.videolan.VLC.Locale
 
 pip3 install fabric
 
