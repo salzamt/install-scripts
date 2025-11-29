@@ -10,6 +10,8 @@ sudo dpkg --add-architecture i386
 # basic stuff
 sudo apt-get install software-properties-common
 
+flatpak install com.github.qarmin.czkawka # dups finder
+
 # for nm-applet and bc its so beautiful
 sudo apt install network-manager-gnome
 sudo apt install qt5ct qt5-style-plugins
