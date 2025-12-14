@@ -101,9 +101,8 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   rsnapshot # backup
   btop # more intense htop
   autorandr # monitor setup
-  borgbackup borgmatic vorta # backups
+  borgbackup borgmatic vorta python3-pyfuse3 fuse3 libfuse3-3# backups
   thunar-archive-plugin xarchiver # archiver
-
 
 flatpak install flathub hu.irl.cameractrls # webcam tool
 flatpak install Ristretto # image viewer
