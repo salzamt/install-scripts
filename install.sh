@@ -159,6 +159,7 @@ sudo apt install \
   nodejs npm samba cifs-utils v4l-utils qv4l2 ghostwriter mpd polybar libreoffice gpsbabel-gui
   lsp-plugins pulseeffects # equalizer
   solaar # logitech receiver config playonlinux freecad
+  npm
 
 flatpak install com.github.vkohaupt.vokoscreenNG
 
@@ -758,5 +759,21 @@ xdg-mime default thunar.desktop application/x-gnome-saved-search
 xdg-mime query default inode/directory
 xdg-open .
 
+# install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
+# load nvm into current shell (or reopen terminal)
+export NVM_DIR="$HOME/.nvm"
+. "$NVM_DIR/nvm.sh"
+
+# install a recent Node and set it default
+nvm install --lts
+nvm use --lts
+nvm alias default 'lts/*'
+
+# install codex
+npm install -g @openai/codex
+
+# verify
+codex --version && codex login --device-auth
 
