@@ -38,6 +38,18 @@ sudo apt install mate-polkit-bin
 # add i3 to xorg init
 exec i3 >> ~/.xinitrc
 
+# NFS Config
+sudo apt install cachefilesd
+sudo mkdir -p /var/cache/fscache\n
+sudo chmod 0755 /var/cache/fscache
+sudo systemctl enable --now cachefilesd
+sudo systemctl restart --now cachefilesd
+systemctl status cachefilesd --no-pager
+nfsstat -m
+sudo systemctl daemon-reload
+sudo systemctl restart media-salzstore.automount
+sudo systemctl restart media-backup.automount
+
 # check modifier config
 Xmodmap
 # assign modifier keys, test which is which
