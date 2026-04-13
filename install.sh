@@ -340,6 +340,7 @@ sudo apt update && sudo apt install insomnia
 
 # install tldr man page excerpt
 sudo npm install -g tldr
+sudo npm install -g node-dbus-notifier
 
 ###############################################################################
 ######################### nordvpn #####@#######################################
