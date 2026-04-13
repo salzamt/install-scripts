@@ -156,6 +156,9 @@ flatpak install com.mastermindzh.tidal-hifi
 pip install tools
 pip3 install tools
 
+# auto-tiling
+sudo apt install cargo && cargo install --git https://gitlab.com/ximnoise/i3-auto-tiling
+
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 chsh -s $(which zsh)
