@@ -803,9 +803,6 @@ nvm install --lts
 nvm use --lts
 nvm alias default 'lts/*'
 
-# install codex
-npm install -g @openai/codex
 
-# verify
-codex --version && codex login --device-auth
 
+gh auth login
