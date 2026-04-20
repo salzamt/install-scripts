@@ -117,6 +117,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   thunar-archive-plugin xarchiver # archiver
   git-filter-repo # rewrite history and filter 
   fd-find
+  gh # github cli
 
 flatpak install flathub hu.irl.cameractrls # webcam tool
 flatpak install Ristretto # image viewer
