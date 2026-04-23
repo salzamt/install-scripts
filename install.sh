@@ -806,3 +806,5 @@ nvm alias default 'lts/*'
 
 
 gh auth login
+npm i worktree-compose
+cargo install worktrunk && wt config shell install
