@@ -123,6 +123,10 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
 flatpak install flathub hu.irl.cameractrls # webcam tool
 flatpak install Ristretto # image viewer
 
+# digital ocean control
+sudo snap install doctl
+
+
 # tuxedo fixes
 sudo apt install tuxedo-fix-amdgpu-disable-psr tuxedo-fix-amdgpu-disable-psr tuxedo-fix-no-ec-wakeup tuxedo-fix-nvme-quirk-mem-deep-sleep
 
