@@ -125,6 +125,7 @@ flatpak install Ristretto # image viewer
 
 # digital ocean control
 sudo snap install doctl
+sudo snap connect doctl:dot-docker
 
 
 # tuxedo fixes
