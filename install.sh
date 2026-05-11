@@ -827,3 +827,5 @@ git config --global delta.navigate true
 git config --global merge.conflictStyle zdiff3
 git config --global diff.tool nvimdiff
 git config --global difftool.prompt false
+git config --global delta.dark true
+git config --global delta.syntax-theme gruvbox-dark
