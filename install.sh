@@ -815,6 +815,7 @@ nvm alias default 'lts/*'
 
 gh auth login
 npm i worktree-compose
+cargo install --locked tree-sitter-cli
 cargo install worktrunk && wt config shell install
 cargo install difftastic
 cargo install git-delta
