@@ -816,6 +816,25 @@ nvm alias default 'lts/*'
 gh auth login
 npm i worktree-compose
 cargo install --locked tree-sitter-cli
+"""
+require'nvim-treesitter.configs'.setup {
+     ensure_installed = {
+       "python", "html", "htmldjango", "jinja", "jinja_inline",
+       "javascript", "typescript", "tsx", "css", "scss",
+       "json", "yaml", "dockerfile", "bash", "lua", "vim",
+       "markdown", "markdown_inline", "query", "regex", "toml",
+       "sql", "gitignore", "git_config", "gitcommit", "diff",
+       "make", "nginx",
+       "c", "cpp", "cmake", "java", "ruby", "perl", "r",
+       "go", "rust", "swift", "objc", "cuda", "xml", "dtd",
+       "rst", "latex", "bibtex", "fortran", "tcl", "qmljs",
+       "properties", "ini", "csv", "tsv", "proto", "git_rebase",
+       "gitattributes", "editorconfig", "php", "nix", "c_sharp"
+     },
+     highlight = {
+       enable = true,
+     },
+     """
 cargo install worktrunk && wt config shell install
 cargo install difftastic
 cargo install git-delta
