@@ -190,6 +190,10 @@ sudo apt install \
   solaar # logitech receiver config playonlinux freecad
   npm
 
+
+# basecamp alternative
+sudo apt install qmapshack viking gpsbabel
+
 flatpak install com.github.vkohaupt.vokoscreenNG
 
 # install i3blocks-contrib scripts
