@@ -1,7 +1,3 @@
-# only debian:
-# add 32 bit support, for some packages
-sudo dpkg --add-architecture i386
-
 # add own user to sudoers file
 /sbin/usermod -aG sudo <username>
 
@@ -121,6 +117,7 @@ sudo apt install curl wget snapd vim python-pip python3-pip hardinfo \
   ansible
   just # for justfiles
   direnv # dir local .envrc management
+  rpi-imager # raspberry pi image manger
 
 flatpak install flathub hu.irl.cameractrls # webcam tool
 flatpak install Ristretto # image viewer
